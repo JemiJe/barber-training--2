@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>testPage</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body>
+		
+		<header class="page-header">
+			<div class="page-header--logo">
+				<img src="img/logo-small.jpg" alt="Барбершоп Бородинский">
+			</div>
+			<nav class="menu menu--closed">
+				<ul>
+					<li><a href="#" class="menu__item">Главная</a></li>
+					<li><a href="#" class="menu__item">Наши работы</a></li>
+					<li><a href="#" class="menu__item">Записаться</a></li>
+					<li><a href="#" class="menu__item">Контакты</a></li>
+					<li><a href="#" class="menu__item">HelloWorld Studio</a></li>
+					<li><a href="#" class="menu__user-block">Вход</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="page-main">
+
+			<section class="page-item">
+				<h1>Стрижка у нас это выгодно!</h1>
+				<p class="page-item__text">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+				<table class="table-stats">
+					<tr>
+						<td class="table-stats__value">1500<sup>*</sup></td>
+						<td class="table-stats__desc">рублей вложений</td>
+					</tr>
+					<tr>
+						<td class="table-stats__value">7200</td>
+						<td class="table-stats__desc">секунд времени мастера</td>
+					</tr>
+					<tr>
+						<td class="table-stats__value">90000</td>
+						<td class="table-stats__desc">постриженных волос</td>
+					</tr>
+					<tr>
+						<td class="table-stats__value">500000<sup>*</sup></td>
+						<td class="table-stats__desc">лайков и комплиментов</td>
+					</tr>
+				</table>
+				<small><sup>*</sup> - приведенные данные ложь</small>
+			</section>
+
+			<section class="page-item features">
+				<div class="slider">
+					<input class="slider__input" type="radio" name="features" id="features-input-1" checked>
+					<input class="slider__input" type="radio" name="features" id="features-input-2">
+					<input class="slider__input" type="radio" name="features" id="features-input-3">
+					<ul>
+						<li class="features__item slider__item">
+							<img class="features__image" src="" alt="feature image">
+							<h1>Быстро</h1>
+							<p class="page-item__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
+						</li>
+						<li class="features_item slider__item">
+							<img class="features__image" src="" alt="feature image">
+							<h1>Круто</h1>
+							<p class="page-item__text">Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне.</p>
+						</li>
+						<li class="features_item slider__item">
+							<img class="features__image" src="" alt="feature image">
+							<h1>Дорого</h1>
+							<p class="page-item__text">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+						</li>
+					</ul>
+					<div class="slider__toggles">
+						<label for="features-input-1" class="slider__toggle"></label>
+						<label for="features-input-2" class="slider__toggle"></label>
+						<label for="features-input-3" class="slider__toggle"></label>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-item news">
+				<h1>Новости и акции</h1>
+				<article class="news-item">
+					<time class="news-item__date" datetime="2017-09-29T00:00">29<small>сент</small></time>
+					<p class="page-item__text page-item__text--small">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+				</article>
+				<article class="news-item">
+					<time class="news-item__date" datetime="2017-09-29T00:00">19<small>сент</small></time>
+					<p class="page-item__text page-item__text--small">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+				</article>
+				<article class="news-item">
+					<time class="news-item__date" datetime="2017-09-29T00:00">9<small>сент</small></time>
+					<p class="page-item__text page-item__text--small">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
+				</article>
+				<a href="#" class="btn">Показать все</a>
+			</section>
+			
+			<section class="page-item reviews">
+				<h1>Отзывы о нас</h1>
+				<div class="slider">
+						<input class="slider__input" type="radio" name="reviews" id="review-input-1" checked>
+						<input class="slider__input" type="radio" name="reviews" id="review-input-2">
+						<input class="slider__input" type="radio" name="reviews" id="review-input-3">
+						<ul>
+							<li class="reviews__item slider__item">
+								<img class="reviews__photo" src="" alt="person photo">
+								<h2 class="reviews__name">Трэвис Баркер</h2>
+								<p class="page-item__text page-item__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+							</li>
+							<li class="reviews_item slider__item">
+								<img class="reviews__photo" src="" alt="person photo">
+								<h2 class="reviews__name">Трэвис Баркер</h2>
+								<p class="page-item__text page-item__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+							</li>
+							<li class="reviews_item slider__item">
+								<img class="reviews__photo" src="" alt="person photo">
+								<h2 class="reviews__name">Трэвис Баркер</h2>
+								<p class="page-item__text page-item__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+							</li>
+						</ul>
+						<div class="slider__toggles">
+							<label for="review-input-1" class="slider__toggle"></label>
+							<label for="review-input-2" class="slider__toggle"></label>
+							<label for="review-input-3" class="slider__toggle"></label>
+						</div>
+					</div>
+			</section>
+
+		</main>
+
+		<footer class="page-footer">
+			<section class="contact">
+				<b>Барбершоп Бородинский</b>
+				<p class="page-item__text page-item__text--small">
+						Барбершоп "Бородинский"<br>
+            Адрес: г.Киев, Крещатик, 38<br>
+				</p>
+				<a href="tel:+30001234567" class="btn">+3 (000) 123-45-67</a>
+			</section>
+
+			<section class="social-btns">
+				<a href="#" class="btn-social btn-social__vk">вконтакте</a>
+				<a href="#" class="btn-social btn-social__fs">facebook</a>
+				<a href="#" class="btn-social btn-social__ins">instagram</a>
+			</section>
+
+			<section class="copyright">
+				<p class="page-item__text page-item__text--small">Разработано</p>
+				<a href="#" class="btn btn--copyright">HelloWorld Studio</a>
+			</section>
+		</footer>
+
+	</body>
+</html>

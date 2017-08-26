@@ -1,0 +1,11 @@
+node_modules
+
+001_layoutSrc
+
+logs
+*.log
+npm-debug.log*
+
+#sass
+#gulpfile.js
+#package.json
