@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>testPage</title>
-	<link rel="stylesheet" href="css/normalize.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Барбершоп Бородинский Главная</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 	<body>
 		
 		<header class="page-header">
-			<div class="page-header--logo">
-				<img src="img/logo-small.jpg" alt="Барбершоп Бородинский">
+			<div class="page-header__logo">
+				<img src="img/logotype-mobile.png" alt="Барбершоп Бородинский" width="226" height="30">
 			</div>
-			<nav class="menu menu--closed">
+			<nav class="page-header__menu  page-header__menu--opened  page-header__menu--nojs">
 				<ul>
-					<li><a href="#" class="menu__item">Главная</a></li>
-					<li><a href="#" class="menu__item">Наши работы</a></li>
-					<li><a href="#" class="menu__item">Записаться</a></li>
-					<li><a href="#" class="menu__item">Контакты</a></li>
-					<li><a href="#" class="menu__item">HelloWorld Studio</a></li>
-					<li><a href="#" class="menu__user-block">Вход</a></li>
+					<li class="page-header__item  page-header__item--current"><a href="#">Главная</a></li>
+					<li class="page-header__item"><a href="#">Наши работы</a></li>
+					<li class="page-header__item"><a href="#">Записаться</a></li>
+					<li class="page-header__item"><a href="#">Контакты</a></li>
+					<li class="page-header__item"><a href="#">HelloWorld Studio</a></li>
+					<button type="button" class="page-header__btnMenu"></button>
+				</ul>
+				<ul>
+					<li class="page-header__item  page-header__item--user-block"><a href="#">Вход</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -151,6 +154,8 @@
 				<a href="#" class="btn btn--copyright">HelloWorld Studio</a>
 			</section>
 		</footer>
+
+		<script src="js/script.js"></script>
 
 	</body>
 </html>

@@ -1,1 +1,1 @@
-"# barber-training--2" 
+# barber-training--2 (adaptive version) 
