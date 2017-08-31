@@ -21,11 +21,6 @@ body {
   background: #242424;
   color: #ffffff; }
 
-a, div, section, header, footer, nav,
-main, h1, h2, article, label,
-img, li, table, tr, td, button {
-  outline: 1px solid #DADADA; }
-
 .wrapper-center {
   width: 100%;
   display: inherit;
@@ -212,10 +207,29 @@ img, li, table, tr, td, button {
     width: 75.25%;
     margin: 0 auto;
     margin-bottom: 15px; }
+    @media (min-width: 768px) {
+      .stats .stats__header h1 {
+        width: 50%;
+        margin: 0;
+        margin-bottom: 0;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: none; } }
+  @media (min-width: 768px) {
+    .stats .stats__header .page-main__text {
+      width: 50%;
+      padding: 7px 33px; } }
+  @media (min-width: 768px) {
+    .stats .stats__header {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: -185px;
+      text-align: left; } }
 
 .stats .stats__table {
   min-height: 317px;
-  width: 100%; }
+  width: 100%;
+  border-collapse: collapse; }
   .stats .stats__table tr {
     height: 77px; }
   .stats .stats__table tr:nth-child(n + 1) {
@@ -239,15 +253,56 @@ img, li, table, tr, td, button {
     padding-left: 28px;
     padding-right: 6.25%;
     text-align: right; }
+  @media (min-width: 768px) {
+    .stats .stats__table {
+      display: flex; }
+      .stats .stats__table tbody {
+        display: inherit;
+        flex-flow: row wrap;
+        width: 100%; }
+      .stats .stats__table tr {
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1 0 50%;
+        height: auto; }
+      .stats .stats__table td {
+        flex: 1 0 auto;
+        width: 100%; }
+      .stats .stats__table .stats__value {
+        padding-left: 11%;
+        padding-top: 15px;
+        font-size: 72px;
+        font-weight: bold;
+        line-height: normal; }
+      .stats .stats__table .stats__desc {
+        min-height: 49px;
+        padding-left: 11%;
+        font-size: 20px;
+        text-align: left; } }
 
 .stats .stats__small {
-  display: none;
   margin: 0 auto;
   padding-top: 13px;
   font-size: 20px;
   line-height: 27px;
   text-align: center;
   color: rgba(255, 255, 255, 0.3); }
+  @media (min-width: 768px) {
+    .stats .stats__small {
+      flex: 0 0 100%;
+      text-align: left; } }
 
 .stats .stats__small--mobile {
   display: block; }
+  @media (min-width: 768px) {
+    .stats .stats__small--mobile {
+      display: none; } }
+
+.stats .stats__small--not-mobile {
+  display: none; }
+  @media (min-width: 768px) {
+    .stats .stats__small--not-mobile {
+      display: block;
+      padding-top: 0;
+      align-self: flex-end;
+      color: rgba(0, 0, 0, 0.3); } }
