@@ -17,7 +17,7 @@
 				</picture>
 			</div>
 			
-			<nav class="page-header__menu  page-header__menu--closed  page-header__menu--nojs">
+			<nav class="page-header__menu  page-header__menu--opened  page-header__menu--nojs">
 				<div class="wrapper-center">
 					<ul class="page-header__container-left">
 						<li class="page-header__item  page-header__item--current"><a href="#">Главная</a></li>
@@ -36,28 +36,34 @@
 
 		<main class="page-main">
 
-			<section class="page-item">
-				<h1>Стрижка у нас это выгодно!</h1>
-				<p class="page-item__text">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-				<table class="table-stats">
+			<section class="stats">
+
+				<div class="stats__header">
+					<h1>Стрижка у нас это выгодно!</h1>
+					<p class="page-main__text">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+					<small class="stats__small"><sup>*</sup> - приведенные данные ложь</small>
+				</div>
+
+				<table class="stats__table">
 					<tr>
-						<td class="table-stats__value">1500<sup>*</sup></td>
-						<td class="table-stats__desc">рублей вложений</td>
+						<td class="stats__value">1 500 <sup>*</sup></td>
+						<td class="stats__desc">рублей вложений</td>
 					</tr>
 					<tr>
-						<td class="table-stats__value">7200</td>
-						<td class="table-stats__desc">секунд времени мастера</td>
+						<td class="stats__value">7 200 </td>
+						<td class="stats__desc">секунд времени мастера</td>
 					</tr>
 					<tr>
-						<td class="table-stats__value">90000</td>
-						<td class="table-stats__desc">постриженных волос</td>
+						<td class="stats__value">90 000 </td>
+						<td class="stats__desc">постриженных волос</td>
 					</tr>
 					<tr>
-						<td class="table-stats__value">500000<sup>*</sup></td>
-						<td class="table-stats__desc">лайков и комплиментов</td>
+						<td class="stats__value">500 000 <sup>*</sup></td>
+						<td class="stats__desc">лайков и комплиментов</td>
 					</tr>
 				</table>
-				<small><sup>*</sup> - приведенные данные ложь</small>
+
+				<small class="stats__small stats__small--mobile"><sup>*</sup> - приведенные данные ложь</small>
 			</section>
 
 			<section class="page-item features">
@@ -69,17 +75,17 @@
 						<li class="features__item slider__item">
 							<img class="features__image" src="" alt="feature image">
 							<h1>Быстро</h1>
-							<p class="page-item__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
+							<p class="page-main__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
 						</li>
 						<li class="features_item slider__item">
 							<img class="features__image" src="" alt="feature image">
 							<h1>Круто</h1>
-							<p class="page-item__text">Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне.</p>
+							<p class="page-main__text">Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне.</p>
 						</li>
 						<li class="features_item slider__item">
 							<img class="features__image" src="" alt="feature image">
 							<h1>Дорого</h1>
-							<p class="page-item__text">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+							<p class="page-main__text">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
 						</li>
 					</ul>
 					<div class="slider__toggles">
@@ -94,15 +100,15 @@
 				<h1>Новости и акции</h1>
 				<article class="news-item">
 					<time class="news-item__date" datetime="2017-09-29T00:00">29<small>сент</small></time>
-					<p class="page-item__text page-item__text--small">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+					<p class="page-main__text page-main__text--small">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
 				</article>
 				<article class="news-item">
 					<time class="news-item__date" datetime="2017-09-29T00:00">19<small>сент</small></time>
-					<p class="page-item__text page-item__text--small">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+					<p class="page-main__text page-main__text--small">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
 				</article>
 				<article class="news-item">
 					<time class="news-item__date" datetime="2017-09-29T00:00">9<small>сент</small></time>
-					<p class="page-item__text page-item__text--small">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
+					<p class="page-main__text page-main__text--small">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
 				</article>
 				<a href="#" class="btn">Показать все</a>
 			</section>
@@ -117,17 +123,17 @@
 							<li class="reviews__item slider__item">
 								<img class="reviews__photo" src="" alt="person photo">
 								<h2 class="reviews__name">Трэвис Баркер</h2>
-								<p class="page-item__text page-item__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+								<p class="page-main__text page-main__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
 							</li>
 							<li class="reviews_item slider__item">
 								<img class="reviews__photo" src="" alt="person photo">
 								<h2 class="reviews__name">Трэвис Баркер</h2>
-								<p class="page-item__text page-item__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+								<p class="page-main__text page-main__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
 							</li>
 							<li class="reviews_item slider__item">
 								<img class="reviews__photo" src="" alt="person photo">
 								<h2 class="reviews__name">Трэвис Баркер</h2>
-								<p class="page-item__text page-item__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+								<p class="page-main__text page-main__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
 							</li>
 						</ul>
 						<div class="slider__toggles">
@@ -143,7 +149,7 @@
 		<footer class="page-footer">
 			<section class="contact">
 				<b>Барбершоп Бородинский</b>
-				<p class="page-item__text page-item__text--small">
+				<p class="page-main__text page-main__text--small">
 						Барбершоп "Бородинский"<br>
             Адрес: г.Киев, Крещатик, 38<br>
 				</p>
@@ -157,7 +163,7 @@
 			</section>
 
 			<section class="copyright">
-				<p class="page-item__text page-item__text--small">Разработано</p>
+				<p class="page-main__text page-main__text--small">Разработано</p>
 				<a href="#" class="btn btn--copyright">HelloWorld Studio</a>
 			</section>
 		</footer>
