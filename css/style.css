@@ -33,7 +33,11 @@ img, li, table, button {
   width: inherit; }
   @media (min-width: 768px) {
     .wrapper-center {
-      width: 640px;
+      width: 83.33%;
+      margin: 0 auto; } }
+  @media (min-width: 1200px) {
+    .wrapper-center {
+      width: 960px;
       margin: 0 auto; } }
 
 .page-header {
@@ -152,4 +156,18 @@ img, li, table, button {
     padding: 25px 15px 0px; }
   .page-header__item {
     flex: 0 0 auto;
-    background: none; } }
+    background: none; }
+  .page-header__logo {
+    height: 180px; } }
+
+@media (min-width: 1200px) {
+  .wrapper-center {
+    padding: 0px 10px; }
+  .page-header__container-left {
+    width: 800px; }
+  .page-header__menu a {
+    padding: 25px 31px 0px; }
+  .page-header__item--user-block a {
+    padding: 25px 20px 0px 50px;
+    text-transform: uppercase;
+    font-weight: bold; } }

@@ -4,7 +4,11 @@
 
 @mixin container {
   @media (min-width: 768px) {
-    width: 640px;
+    width: 83.33%;
+    margin: 0 auto;
+  }
+  @media (min-width: 1200px) {
+    width: 960px;
     margin: 0 auto;
   }
 }
