@@ -45,6 +45,10 @@ body {
   .page-header a {
     color: inherit;
     text-decoration: none; }
+  @media (min-width: 768px) {
+    .page-header {
+      background: #242424 url("../img/back-desktop.jpg") no-repeat center top;
+      background-size: cover; } }
 
 .page-header__logo {
   display: flex;
@@ -160,19 +164,25 @@ body {
     flex: 0 0 auto;
     background: none; }
   .page-header__logo {
-    height: 180px; } }
+    height: 180px; }
+  .page-header__item--user-block {
+    font-size: 0; } }
 
 @media (min-width: 1200px) {
+  .page-header {
+    min-height: 720px; }
   .wrapper-center {
     padding: 0px 10px; }
   .page-header__container-left {
     width: 800px; }
   .page-header__menu a {
     padding: 25px 31px 0px; }
-  .page-header__item--user-block a {
-    padding: 25px 20px 0px 50px;
-    text-transform: uppercase;
-    font-weight: bold; }
+  .page-header__item--user-block {
+    font-size: inherit; }
+    .page-header__item--user-block a {
+      padding: 25px 20px 0px 50px;
+      text-transform: uppercase;
+      font-weight: bold; }
   .page-header__logo {
     height: 270px; } }
 
@@ -197,6 +207,11 @@ body {
     line-height: 30px;
     text-transform: uppercase; }
 
+@media (min-width: 1200px) {
+  .stats {
+    display: flex;
+    margin-top: -158px; } }
+
 .stats .stats__header {
   min-height: 183px;
   padding: 27px 40px;
@@ -215,16 +230,27 @@ body {
         font-size: 40px;
         line-height: 40px;
         text-transform: none; } }
+    @media (min-width: 1200px) {
+      .stats .stats__header h1 {
+        width: 100%; } }
   @media (min-width: 768px) {
     .stats .stats__header .page-main__text {
       width: 50%;
       padding: 7px 33px; } }
+  @media (min-width: 1200px) {
+    .stats .stats__header .page-main__text {
+      width: 100%;
+      padding: 30px 25px 0px 0px; } }
   @media (min-width: 768px) {
     .stats .stats__header {
       display: flex;
       flex-flow: row wrap;
       margin-top: -185px;
       text-align: left; } }
+  @media (min-width: 1200px) {
+    .stats .stats__header {
+      width: 440px;
+      margin-top: 0; } }
 
 .stats .stats__table {
   min-height: 317px;

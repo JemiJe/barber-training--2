@@ -1,5 +1,10 @@
 .stats {
 
+  @media #{$desktop-width} {
+    display: flex;
+    margin-top: -158px;
+  }
+
   .stats__header {
 
     min-height: 183px;
@@ -24,6 +29,10 @@
         line-height: 40px;
         text-transform: none;
       }
+
+      @media #{$desktop-width} {
+        width: 100%;
+      }
     }
 
     .page-main__text {
@@ -31,6 +40,11 @@
       @media #{$tablet-width} {
         width: 50%;
         padding: 7px 33px;
+      }
+
+      @media #{$desktop-width} {
+        width: 100%;
+        padding: 30px 25px 0px 0px;
       }
     }
 
@@ -40,6 +54,11 @@
       margin-top: -185px;
 
       text-align: left;
+    }
+
+    @media #{$desktop-width} {
+      width: 440px;
+      margin-top: 0;
     }
   }
 
