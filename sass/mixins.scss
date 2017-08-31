@@ -2,6 +2,9 @@
   background: gray;
 }
 
-/* @mixin container {
-  width: 
-} */
+@mixin container {
+  @media (min-width: 768px) {
+    width: 640px;
+    margin: 0 auto;
+  }
+}

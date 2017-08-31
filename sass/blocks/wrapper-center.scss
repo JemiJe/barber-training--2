@@ -1,0 +1,7 @@
+.wrapper-center {
+  @include container;
+  display: inherit;
+  flex-flow: inherit;
+  justify-content: inherit;
+  width: inherit;
+}

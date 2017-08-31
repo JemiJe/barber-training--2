@@ -10,20 +10,27 @@
 		
 		<header class="page-header">
 			<div class="page-header__logo">
-				<img src="img/logotype-mobile.png" alt="Барбершоп Бородинский" width="226" height="30">
+				<picture>
+					<source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/logotype-tablet.png">
+					<source media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
+					<img src="img/logotype-mobile.png" alt="Барбершоп Бородинский">
+				</picture>
 			</div>
-			<nav class="page-header__menu  page-header__menu--opened  page-header__menu--nojs">
-				<ul>
-					<li class="page-header__item  page-header__item--current"><a href="#">Главная</a></li>
-					<li class="page-header__item"><a href="#">Наши работы</a></li>
-					<li class="page-header__item"><a href="#">Записаться</a></li>
-					<li class="page-header__item"><a href="#">Контакты</a></li>
-					<li class="page-header__item"><a href="#">HelloWorld Studio</a></li>
-					<button type="button" class="page-header__btnMenu"></button>
-				</ul>
-				<ul>
-					<li class="page-header__item  page-header__item--user-block"><a href="#">Вход</a></li>
-				</ul>
+			
+			<nav class="page-header__menu  page-header__menu--closed  page-header__menu--nojs">
+				<div class="wrapper-center">
+					<ul class="page-header__container-left">
+						<li class="page-header__item  page-header__item--current"><a href="#">Главная</a></li>
+						<li class="page-header__item"><a href="#">Наши работы</a></li>
+						<li class="page-header__item"><a href="#">Записаться</a></li>
+						<li class="page-header__item"><a href="#">Контакты</a></li>
+						<li class="page-header__item"><a href="#">HelloWorld Studio</a></li>
+						<button type="button" class="page-header__btnMenu"></button>
+					</ul>
+					<ul class="page-header__container-right">
+						<li class="page-header__item  page-header__item--user-block"><a href="#">Вход</a></li>
+					</ul>
+				</div>
 			</nav>
 		</header>
 
