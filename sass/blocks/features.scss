@@ -1,0 +1,27 @@
+.features {
+
+  display: flex;
+  flex-flow: column wrap;
+  // min-height: 405px;
+  padding-bottom: 40px;
+
+  ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+  }
+  h1 {
+    margin-bottom: 14px;
+  }
+
+  .features__image {
+    margin-bottom: 30px;
+  }
+
+  .features__item {
+    padding: 40px 14%;
+    padding-bottom: 0px;
+    text-align: center;
+    min-height: 340px;
+  }
+}

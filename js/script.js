@@ -18,5 +18,27 @@ btnMenu.addEventListener("click", function() {
   }
 });
 
+/* SLIDER */
 
 
+var slider = document.querySelectorAll(".slider");
+
+slider.forEach(function(i) {
+  i.classList.remove('slider--nojs');
+});
+
+
+
+/*
+var features = document.querySelector(".features");
+var slider_item = Array.from(features.querySelectorAll(".slider__item"));
+var slider_toggleS = features.querySelector(".slider__toggles");
+var slider_toggle = Array.from(features.querySelectorAll(".slider__toggle"));
+
+console.dir(slider_item);
+
+
+slider_toggleS.addEventListener("click", function(e) {
+  console.log(slider_toggle.indexOf(e.target));
+});
+*/

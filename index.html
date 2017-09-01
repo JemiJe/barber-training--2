@@ -68,32 +68,34 @@
 				<small class="stats__small stats__small--mobile"><sup>*</sup> - приведенные данные ложь</small>
 			</section>
 
-			<section class="page-item features">
-				<div class="slider">
-					<input class="slider__input" type="radio" name="features" id="features-input-1" checked>
-					<input class="slider__input" type="radio" name="features" id="features-input-2">
-					<input class="slider__input" type="radio" name="features" id="features-input-3">
+			<section class="features">
+				<div class="slider slider--nojs">
 					<ul>
-						<li class="features__item slider__item">
-							<img class="features__image" src="" alt="feature image">
+						<li class="features__item  slider__item  slider__item--active" id="slider__item-1">
+							<img class="features__image" src="img/advantage-1-illustration.png" alt="feature image">
 							<h1>Быстро</h1>
 							<p class="page-main__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
 						</li>
-						<li class="features_item slider__item">
-							<img class="features__image" src="" alt="feature image">
+						<li class="features__item  slider__item" id="slider__item-2">
+							<img class="features__image" src="img/advantage-2-illustration.png" alt="feature image">
 							<h1>Круто</h1>
 							<p class="page-main__text">Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне.</p>
 						</li>
-						<li class="features_item slider__item">
-							<img class="features__image" src="" alt="feature image">
+						<li class="features__item  slider__item" id="slider__item-3">
+							<img class="features__image" src="img/advantage-3-illustration.png" alt="feature image">
 							<h1>Дорого</h1>
 							<p class="page-main__text">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
 						</li>
 					</ul>
 					<div class="slider__toggles">
-						<label for="features-input-1" class="slider__toggle"></label>
-						<label for="features-input-2" class="slider__toggle"></label>
-						<label for="features-input-3" class="slider__toggle"></label>
+						<!-- <input class="slider__input" type="radio" name="features" id="features-input-1" checked> -->
+						<div class="slider__toggle  slider__toggle--active" id="slider__toggle-1"></div>
+						
+						<!-- <input class="slider__input" type="radio" name="features" id="features-input-2"> -->
+						<div class="slider__toggle" id="slider__toggle-2"></div>
+						
+						<!-- <input class="slider__input" type="radio" name="features" id="features-input-3"> -->
+						<div class="slider__toggle" id="slider__toggle-3"></div>
 					</div>
 				</div>
 			</section>
@@ -117,7 +119,7 @@
 			
 			<section class="page-item reviews">
 				<h1>Отзывы о нас</h1>
-				<div class="slider">
+				<div class="slider slider--nojs">
 						<input class="slider__input" type="radio" name="reviews" id="review-input-1" checked>
 						<input class="slider__input" type="radio" name="reviews" id="review-input-2">
 						<input class="slider__input" type="radio" name="reviews" id="review-input-3">
