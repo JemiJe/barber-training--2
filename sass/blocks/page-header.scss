@@ -57,6 +57,7 @@
 
 .page-header__btnMenu {
   width: 70px;
+  height: 50px;
 }
 
 .page-header__item {
@@ -124,7 +125,6 @@
   .page-header__btnMenu {
     position: absolute;
     order: -1;
-    height: 50px;
   }
 
   .page-header__item {
@@ -178,10 +178,17 @@
   .page-header__container-left {
     width: 570px;
   }
-  .page-header__container-right {
+  .page-header .page-header__container-right {
+
+    flex: 0 0 auto;
+    width: 10%;
     
     a {
       padding: 25px 15px 0px;
+    }
+
+    li {
+      flex-basis: 100%;
     }
   }
  
@@ -219,6 +226,7 @@
 
     a {
       padding: 25px 31px 0px;
+      text-align: right;
     }
   }
 

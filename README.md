@@ -1,1 +1,1 @@
-# barber-training--2 (adaptive version) 
+# barber-training--2 (responsive version) 
