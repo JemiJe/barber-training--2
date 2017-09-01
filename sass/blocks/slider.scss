@@ -37,6 +37,10 @@
 
   @media #{$tablet-width} {
 
+    .slider__item {
+      display: block;
+    }
+
     .slider__toggles {
       display: none;
     }
