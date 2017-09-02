@@ -3,7 +3,11 @@
   display: flex;
   flex-flow: column wrap;
   // min-height: 405px;
-  padding-bottom: 55px;
+  padding-bottom: 40px;
+
+  @media #{$tablet-width} {
+    padding-bottom: 55px;
+  }
 
   @media #{$desktop-width} {
     flex-flow: row wrap;

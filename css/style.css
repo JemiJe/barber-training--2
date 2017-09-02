@@ -24,6 +24,11 @@ body {
     body {
       background: #353535; } }
 
+a, div, section, header, footer, nav,
+main, h1, h2, p, article, label,
+img, li, table, tr, td, button, time, b {
+  outline: 1px solid #DADADA; }
+
 .slider .slider__toggles {
   display: flex;
   flex-flow: row nowrap;
@@ -58,6 +63,20 @@ body {
 .slider--nojs .slider__toggles {
   display: none; }
 
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #e5ddd5; }
+  .btn--border-ash {
+    border: 1px solid #3e3e3e; }
+
 .wrapper-center {
   width: 100%;
   display: inherit;
@@ -86,6 +105,9 @@ body {
     .page-header {
       background: #242424 url("../img/back-desktop.jpg") no-repeat center top;
       background-size: cover; } }
+  @media (min-width: 1200px) {
+    .page-header .wrapper-center {
+      padding: 0px 10px; } }
 
 .page-header__logo {
   display: flex;
@@ -213,8 +235,6 @@ body {
 @media (min-width: 1200px) {
   .page-header {
     min-height: 720px; }
-  .wrapper-center {
-    padding: 0px 10px; }
   .page-header__container-left {
     width: 800px; }
   .page-header__menu a {
@@ -229,26 +249,20 @@ body {
   .page-header__logo {
     height: 270px; } }
 
-.page-main {
-  width: 100%; }
-  @media (min-width: 768px) {
-    .page-main {
-      width: 83.33%;
-      margin: 0 auto; } }
-  @media (min-width: 1200px) {
-    .page-main {
-      width: 960px;
-      margin: 0 auto; } }
-  .page-main .page-main__text {
-    font-size: 20px;
-    line-height: 27px; }
-  .page-main h1, .page-main p {
-    padding: 0;
-    margin: 0; }
-  .page-main h1 {
-    font-size: 30px;
-    line-height: 30px;
-    text-transform: uppercase; }
+.page-main .page-main__text {
+  font-size: 20px;
+  line-height: 27px; }
+  .page-main .page-main__text--small {
+    font-size: 18px; }
+
+.page-main h1, .page-main p {
+  padding: 0;
+  margin: 0; }
+
+.page-main h1 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase; }
 
 @media (min-width: 1200px) {
   .stats {
@@ -379,7 +393,10 @@ body {
 .features {
   display: flex;
   flex-flow: column wrap;
-  padding-bottom: 55px; }
+  padding-bottom: 40px; }
+  @media (min-width: 768px) {
+    .features {
+      padding-bottom: 55px; } }
   @media (min-width: 1200px) {
     .features {
       flex-flow: row wrap; } }
@@ -419,3 +436,68 @@ body {
         flex: 1 1 33.33%;
         padding: 48px 4%;
         text-align: center; } }
+
+.news {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 33px 6% 28px;
+  width: 100%;
+  color: #000000;
+  border-bottom: 1px solid #e5ddd5;
+  background: #f8f5f2; }
+  @media (min-width: 768px) {
+    .news {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      padding: 38px 0px 28px; } }
+  .news h1 {
+    margin-bottom: 11px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .news h1 {
+        align-content: flex-start;
+        order: 1;
+        width: 70%;
+        margin-top: 13px;
+        font-size: 40px;
+        text-align: left; } }
+  .news .news__news-item {
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 17px 0px; }
+    .news .news__news-item:nth-of-type(n+3) {
+      display: none; }
+    .news .news__news-item:nth-of-type(n+2) {
+      border-top: 1px solid #e5ddd5; }
+    @media (min-width: 768px) {
+      .news .news__news-item {
+        flex: 1 1 50%;
+        order: 3;
+        margin-top: 28px;
+        border: none; } }
+  .news .news__date {
+    flex: 0 0 50px;
+    height: 50px;
+    margin-right: 7%;
+    margin-top: 12px;
+    padding: 8px 0px 0px;
+    color: #ffffff;
+    text-align: center;
+    background: #000000; }
+    .news .news__date b {
+      display: block;
+      font-size: 30px;
+      line-height: 22px;
+      font-weight: bold; }
+    .news .news__date small {
+      display: block;
+      font-size: 16px; }
+  .news .page-main__text {
+    flex: 1 1; }
+  .news .btn {
+    margin-top: 4px; }
+    @media (min-width: 768px) {
+      .news .btn {
+        width: 160px;
+        order: 2; } }
