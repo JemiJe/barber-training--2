@@ -19,3 +19,9 @@
 @mixin btn-fixed {
   width: 160px;
 }
+
+@mixin img-div-fix {
+  display: block;
+  margin: 0;
+  padding: 0;
+}

@@ -20,13 +20,15 @@ btnMenu.addEventListener("click", function() {
 
 /* SLIDER */
 
+function jsHere(slider, noJsClass) {
+  slider.forEach(function(i) {
+    i.classList.remove(noJsClass);
+  });
+}
+
 
 var slider = document.querySelectorAll(".slider");
-
-slider.forEach(function(i) {
-  i.classList.remove('slider--nojs');
-});
-
+jsHere(slider, 'slider--nojs');
 
 
 /*
@@ -42,3 +44,8 @@ slider_toggleS.addEventListener("click", function(e) {
   console.log(slider_toggle.indexOf(e.target));
 });
 */
+
+/* SLIDER CAROUSEL */
+
+var slider_carousel = document.querySelectorAll(".slider-carousel");
+jsHere(slider_carousel, 'slider--nojs');

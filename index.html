@@ -73,21 +73,21 @@
 				<div class="wrapper-center">
 					<div class="slider slider--nojs">
 						<ul>
-							<li class="features__item  slider__item  slider__item--active" id="slider__item-1">
+							<li class="features__item  slider__item  slider__item-1  slider__item--active">
 								<img class="features__image" src="img/advantage-1-illustration.png" alt="feature image">
 								<div class="features__content-right">
 									<h1>Быстро</h1>
 									<p class="page-main__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
 								</div>
 							</li>
-							<li class="features__item  slider__item" id="slider__item-2">
+							<li class="features__item  slider__item  slider__item-2">
 								<img class="features__image" src="img/advantage-2-illustration.png" alt="feature image">
 								<div class="features__content-right">
 									<h1>Круто</h1>
 									<p class="page-main__text">Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне.</p>
 								</div>
 							</li>
-							<li class="features__item  slider__item" id="slider__item-3">
+							<li class="features__item  slider__item  slider__item-3">
 								<img class="features__image" src="img/advantage-3-illustration.png" alt="feature image">
 								<div class="features__content-right">
 									<h1>Дорого</h1>
@@ -96,14 +96,9 @@
 							</li>
 						</ul>
 						<div class="slider__toggles">
-							<!-- <input class="slider__input" type="radio" name="features" id="features-input-1" checked> -->
-							<div class="slider__toggle  slider__toggle--active" id="slider__toggle-1"></div>
-							
-							<!-- <input class="slider__input" type="radio" name="features" id="features-input-2"> -->
-							<div class="slider__toggle" id="slider__toggle-2"></div>
-							
-							<!-- <input class="slider__input" type="radio" name="features" id="features-input-3"> -->
-							<div class="slider__toggle" id="slider__toggle-3"></div>
+							<div class="slider__toggle  slider__toggle-1  slider__toggle--active"></div>
+							<div class="slider__toggle  slider__toggle-2"></div>
+							<div class="slider__toggle  slider__toggle-3"></div>
 						</div>
 					</div>
 				</div>
@@ -128,35 +123,55 @@
 				</div>
 			</section>
 			
-			<section class="page-item reviews">
-				<h1>Отзывы о нас</h1>
-				<div class="slider slider--nojs">
-						<input class="slider__input" type="radio" name="reviews" id="review-input-1" checked>
-						<input class="slider__input" type="radio" name="reviews" id="review-input-2">
-						<input class="slider__input" type="radio" name="reviews" id="review-input-3">
+			<section class="reviews">
+				<div class="wrapper-center">
+					<h1>Отзывы о нас</h1>
+					<div class="reviews__block  slider-carousel slider--nojs">
 						<ul>
-							<li class="reviews__item slider__item">
-								<img class="reviews__photo" src="" alt="person photo">
-								<h2 class="reviews__name">Трэвис Баркер</h2>
-								<p class="page-main__text page-main__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+							<li class="slider-carousel__left"><span>&#8249;</span></li>
+							<li class="reviews__item slider__item  slider__item-1  slider__item--active">
+								<picture class="reviews__photo">
+									<source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/photo-person-1-tablet.png">
+									<source media="(min-width: 1200px)" srcset="img/photo-person-1-desktop.jpg">
+									<img src="img/photo-person-1-mobile.jpg" alt="person photo">
+								</picture>
+								<div class="reviews__desc">
+									<h2 class="reviews__name">Трэвис Баркер</h2>
+									<p class="page-main__text page-main__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+								</div>
 							</li>
-							<li class="reviews_item slider__item">
-								<img class="reviews__photo" src="" alt="person photo">
-								<h2 class="reviews__name">Трэвис Баркер</h2>
-								<p class="page-main__text page-main__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+							<li class="reviews__item slider__item  slider__item-2">
+								<picture class="reviews__photo">
+									<source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/photo-person-1-tablet.png">
+									<source media="(min-width: 1200px)" srcset="img/photo-person-1-desktop.jpg">
+									<img src="img/photo-person-1-mobile.jpg" alt="person photo">
+								</picture>
+								<div class="reviews__desc">
+									<h2 class="reviews__name">Кервис Бартрэ</h2>
+									<p class="page-main__text page-main__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+								</div>
 							</li>
-							<li class="reviews_item slider__item">
-								<img class="reviews__photo" src="" alt="person photo">
-								<h2 class="reviews__name">Трэвис Баркер</h2>
-								<p class="page-main__text page-main__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+							<li class="reviews__item slider__item  slider__item-3">
+								<picture class="reviews__photo">
+									<source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/photo-person-1-tablet.png">
+									<source media="(min-width: 1200px)" srcset="img/photo-person-1-desktop.jpg">
+									<img src="img/photo-person-1-mobile.jpg" alt="person photo">
+								</picture>
+								<div class="reviews__desc">
+									<h2 class="reviews__name">Трэбар Вискер</h2>
+									<p class="page-main__text page-main__text--small">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+								</div>
 							</li>
+							<li class="slider-carousel__right"><span>&#8250;</span></li>
 						</ul>
 						<div class="slider__toggles">
-							<label for="review-input-1" class="slider__toggle"></label>
-							<label for="review-input-2" class="slider__toggle"></label>
-							<label for="review-input-3" class="slider__toggle"></label>
+							<div class="slider__toggle  slider__toggle-1  slider__toggle--active"></div>
+							<div class="slider__toggle  slider__toggle-2"></div>
+							<div class="slider__toggle  slider__toggle-3"></div>
 						</div>
 					</div>
+					<a href="#" class="btn">Оставить свой</a>
+				</div>
 			</section>
 
 		</main>

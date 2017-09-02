@@ -45,15 +45,15 @@
       display: none;
     }
   }
-}
 
-.slider--nojs {
-
-  .slider__item {
-    display: block;
-  }
-
-  .slider__toggles {
-    display: none;
+  &.slider--nojs {
+    
+    .slider__item {
+      display: block;
+    }
+  
+    .slider__toggles {
+      display: none;
+    }
   }
 }

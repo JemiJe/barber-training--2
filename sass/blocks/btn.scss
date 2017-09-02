@@ -12,6 +12,8 @@
   text-transform: uppercase;
 
   border: 1px solid $color-border-cream;
+  cursor: pointer;
+  user-select: none;
 
   &--border-ash {
     border: 1px solid $color-border-ash;
