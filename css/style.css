@@ -449,7 +449,10 @@ img, li, table, tr, td, button, time, b {
     .news {
       flex-flow: row wrap;
       justify-content: space-between;
-      padding: 38px 0px 28px; } }
+      padding: 38px 0px 0px; } }
+  @media (min-width: 1200px) {
+    .news {
+      padding: 48px 0px 0px; } }
   .news h1 {
     margin-bottom: 11px;
     text-align: center; }
@@ -461,6 +464,9 @@ img, li, table, tr, td, button, time, b {
         margin-top: 13px;
         font-size: 40px;
         text-align: left; } }
+    @media (min-width: 1200px) {
+      .news h1 {
+        padding-left: 70px; } }
   .news .news__news-item {
     flex: 1 1 100%;
     display: flex;
@@ -474,8 +480,17 @@ img, li, table, tr, td, button, time, b {
       .news .news__news-item {
         flex: 1 1 50%;
         order: 3;
-        margin-top: 28px;
+        padding: 0px 0px 17px;
+        padding-right: 4%;
+        margin-top: 45px;
         border: none; } }
+    @media (min-width: 1200px) {
+      .news .news__news-item {
+        flex: 1 1 33.33%; }
+        .news .news__news-item:nth-of-type(3) {
+          display: flex; }
+        .news .news__news-item:nth-of-type(n+4) {
+          display: none; } }
   .news .news__date {
     flex: 0 0 50px;
     height: 50px;

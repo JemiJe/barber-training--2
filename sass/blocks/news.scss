@@ -12,7 +12,11 @@
   @media #{$tablet-width} {
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 38px 0px 28px;
+    padding: 38px 0px 0px;
+  }
+
+  @media #{$desktop-width} {
+    padding: 48px 0px 0px;
   }
 
   h1 {
@@ -28,6 +32,10 @@
       
       font-size: 40px;
       text-align: left;
+    }
+
+    @media #{$desktop-width} {
+      padding-left: 70px;
     }
   }
 
@@ -48,9 +56,23 @@
     @media #{$tablet-width} {
       flex: 1 1 50%;
       order: 3;
-      margin-top: 28px;
+      padding: 0px 0px 17px;
+      padding-right: 4%;
+      margin-top: 45px;
 
       border: none;
+    }
+
+    @media #{$desktop-width} {
+      flex: 1 1 33.33%;
+
+      &:nth-of-type(3) {
+        display: flex;
+      }
+
+      &:nth-of-type(n+4) {
+        display: none;
+      }
     }
   }
 
