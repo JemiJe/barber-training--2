@@ -18,4 +18,23 @@
   &--border-ash {
     border: 1px solid $color-border-ash;
   }
+
+  &--tel {
+    @media #{$tablet-width} {
+      display: inline;
+      width: auto;
+      padding: 0;
+  
+      font-size: inherit;
+      font-weight: normal;
+      text-transform: none;
+  
+      border: none !important;
+      user-select: auto;
+    }
+  }
+
+  &--social {
+    font-size: 0px;
+  }
 }
