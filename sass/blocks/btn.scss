@@ -28,13 +28,25 @@
       font-size: inherit;
       font-weight: normal;
       text-transform: none;
+      text-align: left;
   
       border: none !important;
       user-select: auto;
+
+      &::before {
+        display: inline;
+        content: "Тел: ";
+      }
     }
   }
 
   &--social {
     font-size: 0px;
+  }
+
+  &--copyright {
+    &:hover {
+      background: $btn-copy-hover;
+    }
   }
 }

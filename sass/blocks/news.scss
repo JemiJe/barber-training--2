@@ -60,7 +60,7 @@
       padding-right: 4%;
       margin-top: 45px;
 
-      border: none;
+      border: none !important;
     }
 
     @media #{$desktop-width} {

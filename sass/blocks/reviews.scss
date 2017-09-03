@@ -66,7 +66,7 @@
     padding: 17px 0px;
 
     @media #{$tablet-width} {
-      flex: 0 1 84.37%;
+      flex: 0 1 85%;
       justify-content: center;
       align-items: center;
       min-height: 157px;
@@ -75,7 +75,7 @@
       border: 1px solid $color-border-cream;
     }
     @media #{$desktop-width} {
-      flex: 0 1 84.37%;
+      flex: 0 1 85%;
       justify-content: space-between;
       padding: 0;
     }

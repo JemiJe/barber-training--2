@@ -2,7 +2,7 @@
   "name": "barber_package",
   "version": "0.1.0",
   "private": true,
-  "description": "first package for barber site",
+  "description": "first package for barber site (responsive)",
   "author": "JemiJe",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

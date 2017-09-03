@@ -1,5 +1,3 @@
-
-
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
@@ -32,7 +30,7 @@ gulp.task('server', ['sass'], function() {
 //     gulp.watch("sass/**/*.scss", ['sass']);
 // });
 
-gulp.task('run-me', ['server']);
+gulp.task('run:me', ['server']);
 
 
 // gulp.task('serve', ['sass'], function() {

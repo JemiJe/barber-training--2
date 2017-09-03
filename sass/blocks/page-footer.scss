@@ -9,9 +9,24 @@
   border-top: 1px solid $color-border-ash;
   border-bottom: 1px solid $color-border-ash;
 
+  background: $color-footer-background;
+
   @media #{$tablet-width} {
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: flex-start;
+    min-height: 350px;
+    padding: 53px 0px 20px;
+
+    b {
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media #{$desktop-width} {
+    justify-content: flex-start;
+    min-height: 200px;
   }
 
   .page-main__text {
@@ -28,7 +43,13 @@
     text-align: center;
 
     @media #{$tablet-width} {
+      order: 1;
+      flex: 0 1 auto;
       min-height: 0px;
+      width: 290px;
+      padding: 0;
+
+      text-align: left;
     }
 
     .page-main__text {
@@ -44,13 +65,7 @@
       }
     }
 
-    @media #{$tablet-width} {
-      flex: 0 1 50%;
-      order: 1;
-      padding: 0;
-
-      text-align: left;
-    }
+    
   }
 
   .page-footer__social-btns {
@@ -61,6 +76,32 @@
     @media #{$tablet-width} {
       flex: 1 1 100%;
       order: 3;
+      margin-top: 25px;
+      margin-bottom: 0;
+    }
+
+    @media #{$desktop-width} {
+      order: 2;
+      flex-flow: row wrap;
+      flex: 0 1 162px;
+      justify-content: space-between;
+      align-content: flex-start;
+      margin: 0 auto;
+
+      .btn--social {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+      }
+
+      &::before {
+        display: block;
+        content: "Давайте дружить!";
+        width: 100%;
+        @include margin-bottom;
+
+        text-align: center;
+      }
     }
   }
 
@@ -74,9 +115,18 @@
     text-align: center;
 
     @media #{$tablet-width} {
-      flex: 0 1 25%;
+      flex: 0 1 180px;
       order: 2;
+      justify-content: flex-start;
       padding: 0;
+
+      .page-main__text {
+        @include margin-bottom;
+      }
+    }
+
+    @media #{$desktop-width} {
+      margin-left: auto;
     }
   }
 
