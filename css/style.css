@@ -25,6 +25,11 @@ body {
     body {
       background: #353535; } }
 
+a, div, section, header, footer, nav,
+main, h1, h2, p, article, label,
+img, li, table, tr, td, button, time, b {
+  outline: 1px solid #DADADA; }
+
 .btn {
   display: block;
   width: 100%;
@@ -759,6 +764,9 @@ body {
         margin-left: auto; } }
   .page-footer .btn {
     border: 1px solid #3e3e3e; }
+
+.works {
+  padding: 0px 6% 0px; }
 
 .slider-carousel .slider-carousel__left,
 .slider-carousel .slider-carousel__right {

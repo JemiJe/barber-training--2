@@ -5,7 +5,7 @@
 
 @import 'fonts.scss';
 @import 'global.scss';
-// @import 'OUTLINES.scss';
+@import 'OUTLINES.scss';
 
 @import 'blocks/btn.scss';
 @import 'blocks/slider.scss';
@@ -19,6 +19,8 @@
 @import 'blocks/news.scss';
 @import 'blocks/reviews.scss';
 @import 'blocks/page-footer.scss';
+@import 'blocks/works.scss';
+@import 'blocks/price-list.scss';
 
 @import 'blocks/slider-carousel.scss';
 
