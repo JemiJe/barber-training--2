@@ -26,7 +26,7 @@ body {
       background: #353535; } }
 
 a, div, section, header, footer, nav,
-main, h1, h2, p, article, label,
+main, h1, h2, p, article, label, span,
 img, li, table, tr, td, button, time, b {
   outline: 1px solid #DADADA; }
 
@@ -766,7 +766,69 @@ img, li, table, tr, td, button, time, b {
     border: 1px solid #3e3e3e; }
 
 .works {
-  padding: 0px 6% 0px; }
+  display: flex;
+  flex-flow: row wrap;
+  padding: 29px 6% 70px;
+  padding-bottom: 118px;
+  /* TEMP HACK */
+  color: #000000;
+  background: #f8f5f2; }
+  .works h1 {
+    margin: 0px auto 10px; }
+  .works .works__item {
+    flex: 1 1 100%;
+    margin-top: 20px; }
+    .works .works__item .works__photo {
+      height: 176px; }
+      .works .works__item .works__photo--1 {
+        background: #4e4e4e url("../img/photo-1-desktop.jpg") no-repeat right top;
+        background-size: cover; }
+      .works .works__item .works__photo--2 {
+        background: #4e4e4e url("../img/photo-2-desktop.jpg") no-repeat right top;
+        background-size: cover; }
+      .works .works__item .works__photo--3 {
+        background: #4e4e4e url("../img/photo-3-desktop.jpg") no-repeat right top;
+        background-size: cover; }
+      .works .works__item .works__photo--4 {
+        background: #4e4e4e url("../img/photo-4-desktop.jpg") no-repeat right top;
+        background-size: cover; }
+    .works .works__item--favorite {
+      position: relative; }
+      .works .works__item--favorite::before {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 400px;
+        content: "Работа месяца";
+        padding: 13px 25px;
+        font-size: 20px;
+        color: #ffffff;
+        text-transform: uppercase;
+        background: #826550; }
+      .works .works__item--favorite .works__photo {
+        height: 480px; }
+    .works .works__item .works__desc {
+      padding: 17px 23px; }
+      .works .works__item .works__desc h1 {
+        margin-bottom: 13px;
+        font-size: 24px;
+        text-transform: none; }
+    .works .works__item .works__tags {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 0px 23px;
+      font-size: 16px;
+      text-transform: uppercase; }
+      .works .works__item .works__tags .works__tag {
+        flex: 0 0 auto;
+        padding: 2px 19px;
+        padding-left: 36px;
+        margin-bottom: 20px; }
+  .works .page-main__text {
+    font-size: 18px; }
+  @media (max-width: 767px) {
+    .works .btn {
+      display: none; } }
 
 .slider-carousel .slider-carousel__left,
 .slider-carousel .slider-carousel__right {

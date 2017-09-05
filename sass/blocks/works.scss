@@ -1,3 +1,106 @@
 .works {
-  padding: 0px 6% 0px;
+  display: flex;
+  flex-flow: row wrap;
+  
+  padding: 29px 6% 70px;
+  padding-bottom: 118px; /* TEMP HACK */
+
+  color: #000000;
+
+  background: $color-section-background-light;
+
+  h1 {
+    margin: 0px auto 10px;
+  }
+
+  .works__item {
+    flex: 1 1 100%; 
+
+    margin-top: 20px;
+
+    .works__photo {
+      height: 176px;
+
+      &--1 {
+        background: $table-tr-2 url("../img/photo-1-desktop.jpg") no-repeat right top;
+        background-size: cover;
+      }
+      &--2 {
+        background: $table-tr-2 url("../img/photo-2-desktop.jpg") no-repeat right top;
+        background-size: cover;
+      }
+      &--3 {
+        background: $table-tr-2 url("../img/photo-3-desktop.jpg") no-repeat right top;
+        background-size: cover;
+      }
+      &--4 {
+        background: $table-tr-2 url("../img/photo-4-desktop.jpg") no-repeat right top;
+        background-size: cover;
+      }
+      
+    }
+    &--favorite {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 400px;
+
+        content: "Работа месяца";
+        padding: 13px 25px;
+
+        font-size: 20px;
+        color: #ffffff;
+        text-transform: uppercase;
+        
+        background: $menu-mobile-color;
+      }
+
+      .works__photo {
+        height: 480px;
+      }
+    }
+
+    .works__desc {
+      padding: 17px 23px;
+
+      h1 {
+        margin-bottom: 13px;
+
+        font-size: 24px;
+        text-transform: none;
+      }
+    }
+
+    .works__tags {
+      display: flex;
+      flex-flow: row wrap;
+
+      padding: 0px 23px;
+
+      font-size: 16px;
+      text-transform: uppercase;
+
+      .works__tag {
+        flex: 0 0 auto;
+
+        padding: 2px 19px;
+        padding-left: 36px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .page-main__text {
+    font-size: 18px;
+  }
+
+  .btn {
+
+    @media #{$mobile-width-max} {
+      display: none;
+    }
+  }
 }
