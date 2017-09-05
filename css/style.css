@@ -764,12 +764,16 @@ body {
   display: flex;
   flex-flow: row wrap;
   padding: 29px 6% 70px;
+  padding-bottom: 111px;
+  /* TEMP HACK */
   color: #000000;
   background: #f8f5f2; }
   @media (min-width: 768px) {
     .works {
       padding: 51px 0px 70px;
-      margin-top: -183px; } }
+      margin-top: -183px;
+      padding-bottom: 106px;
+      /* TEMP HACK */ } }
   @media (min-width: 1200px) {
     .works {
       justify-content: space-between;
@@ -895,6 +899,52 @@ body {
   @media (min-width: 768px) {
     .works .btn {
       width: 160px; } }
+
+.price-list {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 36px 6% 54px;
+  background: #353535; }
+  .price-list h1 {
+    margin: 0px auto 22px; }
+  .price-list .price-list__table {
+    width: 100%;
+    padding: 0;
+    font-size: 20px; }
+    @media (max-width: 767px) {
+      .price-list .price-list__table .price-list__number {
+        display: none; }
+      .price-list .price-list__table .price-list__service-extra {
+        order: 10;
+        flex: 1 1 100%; }
+        .price-list .price-list__table .price-list__service-extra::before {
+          display: inline;
+          content: "("; }
+        .price-list .price-list__table .price-list__service-extra::after {
+          display: inline;
+          content: ")"; }
+      .price-list .price-list__table .price-list__service {
+        flex: 1 1 70%;
+        font-weight: bold; }
+      .price-list .price-list__table .price-list__price {
+        flex: 1 1 auto;
+        text-align: right; }
+      .price-list .price-list__table tr {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 19px; } }
+  .price-list .price-list__extra {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 20px;
+    border: 1px solid #3e3e3e; }
+    .price-list .price-list__extra img {
+      display: block;
+      width: 58px;
+      height: 58px; }
 
 .slider-carousel .slider-carousel__left,
 .slider-carousel .slider-carousel__right {

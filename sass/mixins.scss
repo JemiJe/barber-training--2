@@ -29,3 +29,14 @@
 @mixin margin-bottom {
   margin-bottom: 15px;
 }
+
+@mixin add-round-brakets {
+  &::before {
+    display: inline;
+    content: "(";
+  }
+  &::after {
+    display: inline;
+    content: ")";
+  }
+}

@@ -3,7 +3,7 @@
   flex-flow: row wrap;
   
   padding: 29px 6% 70px;
-  // padding-bottom: 111px; /* TEMP HACK */
+  padding-bottom: 111px; /* TEMP HACK */
 
   color: #000000;
 
@@ -12,7 +12,7 @@
   @media #{$tablet-width} {
     padding: 51px 0px 70px;
     margin-top: -183px;
-    // padding-bottom: 106px; /* TEMP HACK */
+    padding-bottom: 106px; /* TEMP HACK */
   }
 
   @media #{$desktop-width} {
