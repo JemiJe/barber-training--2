@@ -3,14 +3,36 @@
   flex-flow: row wrap;
   
   padding: 29px 6% 70px;
-  padding-bottom: 118px; /* TEMP HACK */
+  padding-bottom: 111px; /* TEMP HACK */
 
   color: #000000;
 
   background: $color-section-background-light;
 
+  @media #{$tablet-width} {
+    padding: 51px 0px 70px;
+    margin-top: -183px;
+    padding-bottom: 106px; /* TEMP HACK */
+  }
+
   h1 {
     margin: 0px auto 10px;
+
+    @media #{$tablet-width} {
+      margin: 10px auto 10px 0px;
+
+      font-size: 40px;
+    }
+  }
+
+  .works__content-right {
+
+    @media #{$tablet-width} {
+      display: flex;
+      flex-flow: row wrap;
+      flex: 1 1;
+      padding: 15px 27px;
+    }
   }
 
   .works__item {
@@ -18,8 +40,22 @@
 
     margin-top: 20px;
 
+    border: 1px solid $color-border-cream;
+
+    @media #{$tablet-width} {
+      display: flex;
+      flex-flow: row wrap;
+      
+      margin-top: 38px;
+    }
+
     .works__photo {
       height: 176px;
+
+      @media #{$tablet-width} {
+        height: 293px;
+        width: 42.18%;
+      }
 
       &--1 {
         background: $table-tr-2 url("../img/photo-1-desktop.jpg") no-repeat right top;
@@ -56,6 +92,11 @@
         text-transform: uppercase;
         
         background: $menu-mobile-color;
+
+        @media #{$tablet-width} {
+          top: 34px;
+          left: -2px;
+        }
       }
 
       .works__photo {
@@ -64,6 +105,7 @@
     }
 
     .works__desc {
+      width: 100%;
       padding: 17px 23px;
 
       h1 {
@@ -71,6 +113,10 @@
 
         font-size: 24px;
         text-transform: none;
+
+        @media #{$tablet-width} {
+          margin-bottom: 25px;
+        }
       }
     }
 
@@ -78,10 +124,15 @@
       display: flex;
       flex-flow: row wrap;
 
+      width: 100%;
       padding: 0px 23px;
 
       font-size: 16px;
       text-transform: uppercase;
+
+      @media #{$tablet-width} {
+        align-self: flex-end;
+      }
 
       .works__tag {
         flex: 0 0 auto;
@@ -101,6 +152,10 @@
 
     @media #{$mobile-width-max} {
       display: none;
+    }
+
+    @media #{$tablet-width} {
+      @include btn-fixed;
     }
   }
 }
