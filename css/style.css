@@ -764,16 +764,18 @@ body {
   display: flex;
   flex-flow: row wrap;
   padding: 29px 6% 70px;
-  padding-bottom: 111px;
-  /* TEMP HACK */
   color: #000000;
   background: #f8f5f2; }
   @media (min-width: 768px) {
     .works {
       padding: 51px 0px 70px;
-      margin-top: -183px;
-      padding-bottom: 106px;
-      /* TEMP HACK */ } }
+      margin-top: -183px; } }
+  @media (min-width: 1200px) {
+    .works {
+      justify-content: space-between;
+      align-content: flex-start;
+      padding: 51px 0px 87px;
+      margin-top: -340px; } }
   .works h1 {
     margin: 0px auto 10px; }
     @media (min-width: 768px) {
@@ -786,6 +788,9 @@ body {
       flex-flow: row wrap;
       flex: 1 1;
       padding: 15px 27px; } }
+  @media (min-width: 1200px) {
+    .works .works__content-right {
+      min-height: 247px; } }
   .works .works__item {
     flex: 1 1 100%;
     margin-top: 20px;
@@ -795,12 +800,19 @@ body {
         display: flex;
         flex-flow: row wrap;
         margin-top: 38px; } }
+    @media (min-width: 1200px) {
+      .works .works__item {
+        align-content: flex-start;
+        flex: 0 1 294px; } }
     .works .works__item .works__photo {
       height: 176px; }
       @media (min-width: 768px) {
         .works .works__item .works__photo {
           height: 293px;
           width: 42.18%; } }
+      @media (min-width: 1200px) {
+        .works .works__item .works__photo {
+          width: 100%; } }
       .works .works__item .works__photo--1 {
         background: #4e4e4e url("../img/photo-1-desktop.jpg") no-repeat right top;
         background-size: cover; }
@@ -815,6 +827,12 @@ body {
         background-size: cover; }
     .works .works__item--favorite {
       position: relative; }
+      @media (min-width: 1200px) {
+        .works .works__item--favorite {
+          flex: 1 1 100%;
+          margin-top: 80px; }
+          .works .works__item--favorite .works__content-right {
+            padding: 100px 18px 15px; } }
       .works .works__item--favorite::before {
         position: absolute;
         display: block;
@@ -828,13 +846,25 @@ body {
         background: #826550; }
         @media (min-width: 768px) {
           .works .works__item--favorite::before {
-            top: 34px;
-            left: -2px; } }
+            top: 34px; } }
+        @media (min-width: 1200px) {
+          .works .works__item--favorite::before {
+            left: auto;
+            right: 0; } }
       .works .works__item--favorite .works__photo {
         height: 480px; }
+        @media (min-width: 1200px) {
+          .works .works__item--favorite .works__photo {
+            width: 50%; } }
+      @media (min-width: 1200px) {
+        .works .works__item--favorite .works__desc {
+          padding: 17px 23px !important; } }
     .works .works__item .works__desc {
       width: 100%;
       padding: 17px 23px; }
+      @media (min-width: 1200px) {
+        .works .works__item .works__desc {
+          padding: 3px 7px; } }
       .works .works__item .works__desc h1 {
         margin-bottom: 13px;
         font-size: 24px;

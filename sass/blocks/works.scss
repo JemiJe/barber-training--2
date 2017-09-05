@@ -3,7 +3,7 @@
   flex-flow: row wrap;
   
   padding: 29px 6% 70px;
-  padding-bottom: 111px; /* TEMP HACK */
+  // padding-bottom: 111px; /* TEMP HACK */
 
   color: #000000;
 
@@ -12,7 +12,15 @@
   @media #{$tablet-width} {
     padding: 51px 0px 70px;
     margin-top: -183px;
-    padding-bottom: 106px; /* TEMP HACK */
+    // padding-bottom: 106px; /* TEMP HACK */
+  }
+
+  @media #{$desktop-width} {
+    justify-content: space-between;
+    align-content: flex-start;
+
+    padding: 51px 0px 87px;
+    margin-top: -340px;
   }
 
   h1 {
@@ -33,10 +41,14 @@
       flex: 1 1;
       padding: 15px 27px;
     }
+
+    @media #{$desktop-width} {
+      min-height: 247px;
+    }
   }
 
   .works__item {
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
 
     margin-top: 20px;
 
@@ -49,12 +61,22 @@
       margin-top: 38px;
     }
 
+    @media #{$desktop-width} {
+      align-content: flex-start;
+
+      flex: 0 1 294px;
+    }
+
     .works__photo {
       height: 176px;
 
       @media #{$tablet-width} {
         height: 293px;
         width: 42.18%;
+      }
+
+      @media #{$desktop-width} {
+        width: 100%;
       }
 
       &--1 {
@@ -78,6 +100,15 @@
     &--favorite {
       position: relative;
 
+      @media #{$desktop-width} {
+        flex: 1 1 100%;
+        margin-top: 80px;
+
+        .works__content-right {
+          padding: 100px 18px 15px;
+        }
+      }
+
       &::before {
         position: absolute;
         display: block;
@@ -95,18 +126,37 @@
 
         @media #{$tablet-width} {
           top: 34px;
-          left: -2px;
+        }
+
+        @media #{$desktop-width} {
+          left: auto;
+          right: 0;
         }
       }
 
       .works__photo {
         height: 480px;
+
+        @media #{$desktop-width} {
+          width: 50%;
+        }
+      }
+
+      .works__desc {
+        
+        @media #{$desktop-width} {
+          padding: 17px 23px !important;
+        }
       }
     }
 
     .works__desc {
       width: 100%;
       padding: 17px 23px;
+
+      @media #{$desktop-width} {
+        padding: 3px 7px;
+      }
 
       h1 {
         margin-bottom: 13px;
