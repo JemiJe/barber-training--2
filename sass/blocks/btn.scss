@@ -49,4 +49,12 @@
       background: $btn-copy-hover;
     }
   }
+
+  &--submit {
+    color: #ffffff;
+    font-family: "PTSansNarrow", sans-serif;
+
+    border: none;
+    background: $menu-mobile-color;
+  }
 }

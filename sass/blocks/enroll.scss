@@ -1,17 +1,210 @@
 .enroll {
+  display: flex;
+  flex-flow: row wrap;
+  
+  padding: 29px 6% 73px;
+
+  color: #000000;
+
+  background: $color-section-background-light;
+
+  h1 {
+    margin: 0px auto 0px;
+
+    @media #{$tablet-width} {
+      margin: 10px auto 30px 0px;
+
+      font-size: 40px;
+    }
+  }
+  ul {
+    @include reset-pad-mar;
+    list-style-type: none;
+  }
+  li {
+    @include reset-pad-mar;
+  }
   
   .enroll__form {
 
+    fieldset {
+      @include reset-fieldset;
+      margin-top: 30px;
+    }
+    .enroll__field-header {
+      width: 100%;
+
+      text-align: center;
+    }
+    h2 {
+      @include reset-pad-mar;
+      font-size: 20px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
     .enroll__contact-details {
 
+      input,
+      textarea {
+        border: 1px solid $color-border-cream;
+      }
+      
+      input {
+        width: 100%;
+        padding: 14px 17px;
+        margin-bottom: 7px;
+      }
+
+      textarea {
+        width: 100%;
+        height: 110px;
+        margin-top: 29px;
+        padding: 14px 17px;
+
+        resize: none;
+        overflow: auto;
+      }
+
+      .phone-num {
+        margin-top: 29px;
+      }
+    }
+
+    .enroll__beard-type,
+    .enroll__extra-service {
+      
+      input {
+        display: none;
+      }
     }
 
     .enroll__beard-type {
+      display: flex;
+      flex-flow: row wrap;
 
+      margin-top: 35px; /* TEMP MARGIN */
+      padding: 40px 0px 0px;
+
+      ul {
+        @include flex-inherit;
+      }
+      
+      li {
+        flex: 0 1 auto;
+        margin: 0px 0px 7px;
+      }
+
+      .enroll__beard-type-radio {
+        position: relative;
+        display: block;
+        width: 93px;
+        min-height: 200px;
+        
+        padding-top: 63px;
+
+        font-size: 18px;
+        text-align: center;
+        text-transform: lowercase;
+
+        user-select: none;
+        cursor: pointer;
+      }
+
+      .enroll__beard-type-radio::before {
+        position: absolute;
+        display: block;
+        content: "";
+
+        top: 0;
+        left: 23px;
+        width: 48px;
+        height: 48px;
+
+        background: #ffffff;
+
+        border: 2px solid $color-border-cream;
+        border-radius: 26px;
+      }
+
+      input:checked + .enroll__beard-type-radio::after {
+        position: absolute;
+        display: block;
+        content: "";
+
+        top: 16px;
+        left: 39px;
+        width: 16px;
+        height: 16px;
+
+        background: #ffffff;
+
+        border: 2px solid $color-border-cream;
+        border-radius: 10px;
+        
+      }
     }
 
     .enroll__extra-service {
+      display: flex;
+      flex-flow: row wrap;
+
+      margin-top: 40px; /* TEMP MARGIN */
+
+      .enroll__field-header {
+        margin-bottom: 17px;
+      }
+
+      ul {
+        @include flex-inherit;
+      }
       
+      li {
+        flex: 0 1 100%;
+        margin-top: 20px;
+      }
+
+      .enroll__extra-serv-check {
+        position: relative;
+        display: block;
+        padding: 8px 16px 8px 60px;
+
+        font-size: 18px;
+      }
+
+      .enroll__extra-serv-check::before {
+        position: absolute;
+        display: block;
+        content: "";
+
+        top: 0;
+        left: 0;
+        width: 32px;
+        height: 32px;
+
+        background: #ffffff;
+
+        border: 2px solid $color-border-cream;
+      }
+      
+      input:checked + .enroll__extra-serv-check::before { /* change to AFTER + icon*/
+        background: #887DF6;
+      }
     }
+  }
+
+  .btn--to-home {
+
+    @media #{$mobile-width-max} {
+      display: none;
+    }
+
+    @media #{$tablet-width} {
+      @include btn-fixed;
+    }
+  }
+
+  .btn--submit {
+    margin-top: 46px;
   }
 }
