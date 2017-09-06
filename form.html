@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Барбершоп Бородинский Работы</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body>
+		
+		<header class="page-header">
+			<div class="page-header__logo">
+				<picture>
+					<source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/logotype-tablet.png">
+					<source media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
+					<img src="img/logotype-mobile.png" alt="Барбершоп Бородинский">
+				</picture>
+			</div>
+			
+			<nav class="page-header__menu  page-header__menu--opened  page-header__menu--nojs">
+				<div class="wrapper-center">
+					<ul class="page-header__container-left">
+						<li class="page-header__item"><a href="index.html">Главная</a></li>
+						<li class="page-header__item"><a href="works.html">Наши работы</a></li>
+						<li class="page-header__item  page-header__item--current"><a href="#">Записаться</a></li>
+						<li class="page-header__item"><a href="#">Контакты</a></li>
+						<li class="page-header__item"><a href="#">HelloWorld Studio</a></li>
+						<li class="page-header__btnMenu">
+							<button type="button" class="page-header__btnMenu"></button>
+						</li>
+					</ul>
+					<ul class="page-header__container-right">
+						<li class="page-header__item  page-header__item--user-block"><a href="#">Вход</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main class="page-main">
+
+      <section class="enroll">
+        <form class="enroll__form" action="http://httpbin.org/post" method="post">
+          
+          <fieldset class="enroll__contact-details">
+            <input type="text" name="lastname" placeholder="Фамилия">
+            <input type="text" name="firstname" placeholder="Имя">
+            <input type="text" name="patronymic" placeholder="Отчество">
+
+            <input type="text" name="phone-number" placeholder="Контактный телефон">
+            <input type="email" name="email" placeholder="Контактный e-mail">
+
+            <textarea name="add-info" cols="30" rows="10" placeholder="Доп. информация для мастера"></textarea>
+          </fieldset>
+
+          <fieldset class="enroll__beard-type">
+            <input type="radio" name="beard-type" id="admiral" value="admiral">
+            <label for="admiral">Адмирал</label>
+            <input type="radio" name="beard-type" id="lumberjack" value="lumberjack">
+            <label for="lumberjack">Лесоруб</label>
+            <input type="radio" name="beard-type" id="polar" value="polar">
+            <label for="polar">Полярник</label>
+            <input type="radio" name="beard-type" id="boyar" value="boyar">
+            <label for="boyar">Боярин</label>
+            <input type="radio" name="beard-type" id="wise-old-man" value="wise-old-man">
+            <label for="wise-old-man">Мудрец</label>
+          </fieldset>
+
+          <fieldset class="enroll__extra-service">
+            <input type="checkbox" name="with-dye" id="with-dye" value="true">
+            <label for="with-dye">Подкрасить</label>
+            <input type="checkbox" name="with-twist-a-mustache" id="with-twist-a-mustache" value="true">
+            <label for="with-twist-a-mustache">Нактурить усы</label>
+            <input type="checkbox" name="with-comb-a-beard" id="with-comb-a-beard" value="true">
+            <label for="with-comb-a-beard">Причесать бороду</label>
+            <input type="checkbox" name="with-direct-temple" id="with-direct-temple" value="true">
+            <label for="with-direct-temple">Подровнять виски</label>
+            <input type="checkbox" name="with-cleared-graing" id="with-cleared-graing" value="true">
+            <label for="with-cleared-graing">Убрать седину</label>
+            <input type="checkbox" name="with-polished-bald" id="with-polished-bald" value="true">
+            <label for="with-polished-bald">Отполировать лысину</label>
+          </fieldset>
+          
+          <button class="btn" type="submit">Отправить заявку</button>
+        </form>
+      </section>
+      
+		</main>
+
+		<footer class="page-footer">
+			<div class="wrapper-center">
+				<section class="page-footer__contact">
+					<b>Барбершоп Бородинский</b>
+					<p class="page-main__text page-main__text--small">
+							Адрес: г.Киев, Крещатик, 38 <br>
+					</p>
+					<a href="tel:+30001234567" class="btn btn--tel">+3 (000) 123-45-67</a>
+				</section>
+	
+				<section class="page-footer__social-btns">
+					<a href="#" class="btn btn--social btn--vk">вконтакте</a>
+					<a href="#" class="btn btn--social btn--fs">facebook</a>
+					<a href="#" class="btn btn--social btn--ins">instagram</a>
+				</section>
+	
+				<section class="page-footer__copyright">
+					<p class="page-main__text page-main__text--small">Разработано</p>
+					<a href="#" class="btn btn--copyright">HelloWorld Studio</a>
+				</section>
+			</div>
+		</footer>
+
+		<script src="js/script.js"></script>
+
+	</body>
+</html>
