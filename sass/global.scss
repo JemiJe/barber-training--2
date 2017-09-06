@@ -10,3 +10,7 @@ body {
 		background: $color-body-background-2;
 	}
 }
+label {
+	user-select: none;
+	cursor: pointer;
+}

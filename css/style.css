@@ -25,6 +25,10 @@ body {
     body {
       background: #353535; } }
 
+label {
+  user-select: none;
+  cursor: pointer; }
+
 .btn {
   display: block;
   width: 100%;
@@ -1015,6 +1019,10 @@ body {
     .enroll {
       padding: 52px 0px 76px;
       margin-top: -184px; } }
+  @media (min-width: 1200px) {
+    .enroll {
+      padding: 52px 0px 87px;
+      margin-top: -340px; } }
   .enroll h1 {
     margin: 0px auto 0px; }
     @media (min-width: 768px) {
@@ -1063,41 +1071,61 @@ body {
     @media (min-width: 768px) {
       .enroll .enroll__form h2 {
         font-size: 30px; } }
-  .enroll .enroll__form .enroll__contact-details input,
-  .enroll .enroll__form .enroll__contact-details textarea {
-    padding: 14px 17px;
-    font-size: 18px;
-    font-family: "PTSansNarrow", sans-serif;
-    border: 1px solid #e5ddd5; }
-    @media (min-width: 768px) {
-      .enroll .enroll__form .enroll__contact-details input,
-      .enroll .enroll__form .enroll__contact-details textarea {
-        padding: 20px 22px;
-        font-size: 24px; } }
-  .enroll .enroll__form .enroll__contact-details input {
-    width: 100%;
-    margin-bottom: 7px; }
-  .enroll .enroll__form .enroll__contact-details textarea {
-    width: 100%;
-    height: 110px;
-    margin-top: 29px;
-    resize: none;
-    overflow: auto; }
-    @media (min-width: 768px) {
-      .enroll .enroll__form .enroll__contact-details textarea {
-        height: 210px; } }
-  .enroll .enroll__form .enroll__contact-details .enroll__phone-num {
-    margin-top: 29px; }
-    @media (min-width: 768px) {
-      .enroll .enroll__form .enroll__contact-details .enroll__phone-num {
+  .enroll .enroll__form .enroll__contact-details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .enroll .enroll__form .enroll__contact-details input,
+    .enroll .enroll__form .enroll__contact-details textarea {
+      padding: 14px 17px;
+      font-size: 18px;
+      font-family: "PTSansNarrow", sans-serif;
+      border: 1px solid #e5ddd5; }
+      @media (min-width: 768px) {
+        .enroll .enroll__form .enroll__contact-details input,
+        .enroll .enroll__form .enroll__contact-details textarea {
+          padding: 20px 22px;
+          font-size: 24px; } }
+    .enroll .enroll__form .enroll__contact-details input {
+      width: 100%;
+      margin-bottom: 7px; }
+    .enroll .enroll__form .enroll__contact-details textarea {
+      width: 100%;
+      height: 110px;
+      margin-top: 29px;
+      resize: none;
+      overflow: auto; }
+      @media (min-width: 768px) {
+        .enroll .enroll__form .enroll__contact-details textarea {
+          height: 210px; } }
+      @media (min-width: 1200px) {
+        .enroll .enroll__form .enroll__contact-details textarea {
+          margin-top: 0; } }
+    .enroll .enroll__form .enroll__contact-details .enroll__phone-num {
+      margin-top: 29px; }
+      @media (min-width: 768px) {
+        .enroll .enroll__form .enroll__contact-details .enroll__phone-num {
+          margin: 29px 0px 35px; } }
+    @media (min-width: 1200px) {
+      .enroll .enroll__form .enroll__contact-details .enroll__email {
         margin: 29px 0px 35px; } }
-  @media (min-width: 768px) {
-    .enroll .enroll__form .enroll__contact-details {
-      margin-top: 50px; }
+    @media (min-width: 768px) {
       .enroll .enroll__form .enroll__contact-details .enroll__lastname,
       .enroll .enroll__form .enroll__contact-details .enroll__firstname,
       .enroll .enroll__form .enroll__contact-details .enroll__patronymic {
-        width: 33.33%; } }
+        flex: 1 1 33.33%; } }
+    @media (min-width: 1200px) {
+      .enroll .enroll__form .enroll__contact-details .enroll__lastname,
+      .enroll .enroll__form .enroll__contact-details .enroll__firstname,
+      .enroll .enroll__form .enroll__contact-details .enroll__patronymic {
+        flex: 0 0 293px; } }
+    @media (min-width: 768px) {
+      .enroll .enroll__form .enroll__contact-details {
+        margin-top: 50px; } }
+    @media (min-width: 1200px) {
+      .enroll .enroll__form .enroll__contact-details .enroll__phone-num,
+      .enroll .enroll__form .enroll__contact-details .enroll__email {
+        flex: 0 0 460px; } }
   .enroll .enroll__form .enroll__beard-type input,
   .enroll .enroll__form .enroll__extra-service input {
     display: none; }
@@ -1152,10 +1180,17 @@ body {
       background: #ffffff;
       border: 2px solid #e5ddd5;
       border-radius: 10px; }
+    @media (min-width: 1200px) {
+      .enroll .enroll__form .enroll__beard-type .enroll__field-header {
+        margin-bottom: 10px; } }
     @media (min-width: 768px) {
       .enroll .enroll__form .enroll__beard-type {
         justify-content: space-between;
         margin-top: 50px; } }
+    @media (min-width: 1200px) {
+      .enroll .enroll__form .enroll__beard-type {
+        justify-content: space-around;
+        margin-top: 68px; } }
   .enroll .enroll__form .enroll__extra-service {
     display: flex;
     flex-flow: row wrap;
@@ -1164,6 +1199,9 @@ body {
     @media (min-width: 768px) {
       .enroll .enroll__form .enroll__extra-service {
         margin-top: 90px; } }
+    @media (min-width: 1200px) {
+      .enroll .enroll__form .enroll__extra-service {
+        margin-top: 86px; } }
     .enroll .enroll__form .enroll__extra-service .enroll__field-header {
       margin-bottom: 17px; }
       @media (min-width: 768px) {
@@ -1181,6 +1219,9 @@ body {
         .enroll .enroll__form .enroll__extra-service li {
           flex: 0 1 50%;
           margin-top: 40px; } }
+      @media (min-width: 1200px) {
+        .enroll .enroll__form .enroll__extra-service li {
+          flex: 0 1 33.33%; } }
     .enroll .enroll__form .enroll__extra-service .enroll__extra-serv-check {
       position: relative;
       display: block;
@@ -1217,6 +1258,14 @@ body {
         margin-top: 53px;
         padding: 21px 0;
         font-size: 24px; } }
+    @media (min-width: 1200px) {
+      .enroll .btn--submit {
+        margin-top: 75px; } }
+  .enroll .fieldset-flex-inner-wrapper {
+    display: inherit;
+    flex-flow: inherit;
+    justify-content: inherit;
+    align-items: inherit; }
 
 .slider-carousel .slider-carousel__left,
 .slider-carousel .slider-carousel__right {

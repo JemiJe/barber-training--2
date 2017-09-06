@@ -12,6 +12,10 @@
     padding: 52px 0px 76px;
     margin-top: -184px;
   }
+  @media #{$desktop-width} {
+    padding: 52px 0px 87px;
+    margin-top: -340px;
+  }
 
   h1 {
     margin: 0px auto 0px;
@@ -79,6 +83,9 @@
     }
 
     .enroll__contact-details {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
 
       input,
       textarea {
@@ -112,6 +119,9 @@
         @media #{$tablet-width} {
           height: 210px;
         }
+        @media #{$desktop-width} {
+          margin-top: 0;
+        }
       }
 
       .enroll__phone-num {
@@ -121,14 +131,34 @@
           margin: 29px 0px 35px;
         }
       }
+      .enroll__email {
+
+        @media #{$desktop-width} {
+          margin: 29px 0px 35px;
+        }
+      }
+
+      .enroll__lastname,
+      .enroll__firstname,
+      .enroll__patronymic {
+
+        @media #{$tablet-width} {
+          flex: 1 1 33.33%;
+        }
+        @media #{$desktop-width} {
+          flex: 0 0 293px;
+        }
+      }
 
       @media #{$tablet-width} {
         margin-top: 50px;
-  
-        .enroll__lastname,
-        .enroll__firstname,
-        .enroll__patronymic {
-          width: 33.33%;
+      }
+
+      @media #{$desktop-width} {
+        
+        .enroll__phone-num,
+        .enroll__email {
+          flex: 0 0 460px;
         }
       }
     }
@@ -211,10 +241,21 @@
         
       }
 
+      .enroll__field-header {
+        @media #{$desktop-width} {
+          margin-bottom: 10px;
+        }
+      }
+
       @media #{$tablet-width} {
         justify-content: space-between;
 
         margin-top: 50px;
+      }
+      @media #{$desktop-width} {
+        justify-content: space-around;
+
+        margin-top: 68px;
       }
     }
 
@@ -226,6 +267,9 @@
 
       @media #{$tablet-width} {
         margin-top: 90px;
+      }
+      @media #{$desktop-width} {
+        margin-top: 86px;
       }
 
       .enroll__field-header {
@@ -247,6 +291,9 @@
         @media #{$tablet-width} {
           flex: 0 1 50%;
           margin-top: 40px;
+        }
+        @media #{$desktop-width} {
+          flex: 0 1 33.33%;
         }
       }
 
@@ -304,5 +351,12 @@
 
       font-size: 24px;
     }
+    @media #{$desktop-width} {
+      margin-top: 75px;
+    }
+  }
+
+  .fieldset-flex-inner-wrapper {
+    @include flex-inherit;
   }
 }
