@@ -1,0 +1,3 @@
+@function in-percent-ratio($child, $parent) {
+  @return (($child / $parent) * 100%);
+}

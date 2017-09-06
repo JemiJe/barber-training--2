@@ -2,12 +2,28 @@
   display: flex;
   flex-flow: row wrap;
 
-  padding: 36px 6% 54px;
+  padding: 36px 6% 58px;
 
   background: $color-body-background-2;
 
+  @media #{$tablet-width} {
+    padding: 36px 0px 65px;
+  }
+  @media #{$desktop-width} {
+  justify-content: space-between;
+
+    padding: 73px 0px 79px;
+  }
+
   h1 {
     margin: 0px auto 22px;
+
+    @media #{$tablet-width} {
+      margin: 10px auto 52px 0px;
+      width: 100%;
+
+      font-size: 40px;
+    }
   }
 
   .price-list__table {
@@ -15,6 +31,12 @@
     padding: 0;
 
     font-size: 20px;
+
+    border-collapse: collapse;
+
+    @media #{$desktop-width} {
+      width: 641px;
+    }
 
     @media #{$mobile-width-max} {
       
@@ -31,8 +53,6 @@
 
       .price-list__service {
         flex: 1 1 70%;
-
-        font-weight: bold;
       }
 
       .price-list__price {
@@ -48,12 +68,47 @@
         margin-bottom: 19px;
       }
     }
+
+    @media #{$tablet-width} {
+
+      tr {
+
+        td {
+          padding: 16px 19px;
+
+          border: 1px solid $color-border-ash;
+        }
+      }
+
+      .price-list__number {
+        width: in-percent-ratio(70px, 640px);
+      }
+      .price-list__service {
+        width: in-percent-ratio(248px, 640px);
+      }
+      .price-list__service-extra {
+        width: in-percent-ratio(158px, 640px);
+      }
+      .price-list__price {
+        width: in-percent-ratio(158px, 640px);
+      }
+    }
+
+    .price-list__number {
+      text-align: center;
+      color:  $color-ash-light;
+    }
+
+    .price-list__service {
+      font-weight: bold;
+    }
   }
 
   .price-list__extra {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: center;
 
     width: 100%;
     margin-top: 10px;
@@ -61,10 +116,45 @@
 
     border: 1px solid $color-border-ash;
 
+    @media #{$desktop-width} {
+      margin-top: 0;
+      width: 267px;
+    }
+
     img {
       display: block;
       width: 58px;
       height: 58px;
+
+      @media #{$tablet-width} {
+        width: 72px;
+        height: 72px;
+      }
+
+      @media #{$desktop-width} {
+        width: 140px;
+        height: 140px;
+      }
+    }
+
+    .page-main__text {
+
+      @media #{$mobile-width-max} {
+        width: 120px;
+      }
+
+      @media #{$tablet-width} {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      @media #{$desktop-width} {
+        width: 120px;
+
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+      }
     }
   }
 }
