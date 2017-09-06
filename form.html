@@ -45,18 +45,18 @@
           <form class="enroll__form" action="http://httpbin.org/post" method="post">
             
             <fieldset class="enroll__contact-details">
-              <input type="text" name="lastname" placeholder="Фамилия">
-              <input type="text" name="firstname" placeholder="Имя">
-              <input type="text" name="patronymic" placeholder="Отчество">
+              <input type="text" name="lastname" placeholder="Фамилия" class="enroll__lastname" required><!-- 
+               --><input type="text" name="firstname" placeholder="Имя" class="enroll__firstname" required><!-- 
+               --><input type="text" name="patronymic" placeholder="Отчество" class="enroll__patronymic"><!-- 
   
-              <input type="text" name="phone-number" placeholder="Контактный телефон" class="phone-num">
-              <input type="email" name="email" placeholder="Контактный e-mail">
+               --><input type="text" name="phone-number" placeholder="Контактный телефон" class="enroll__phone-num" required><!-- 
+               --><input type="email" name="email" placeholder="Контактный e-mail" class="enroll__email">
   
               <textarea name="add-info" cols="30" rows="10" placeholder="Доп. информация для мастера"></textarea>
             </fieldset>
   
             <fieldset class="enroll__beard-type">
-              <legend class="enroll__field-header"><h2>Выберете модель бороды:</h2></legend>
+              <legend class="enroll__field-header"><h2>Выберите модель бороды:</h2></legend>
 
               <ul>
                 <li>
