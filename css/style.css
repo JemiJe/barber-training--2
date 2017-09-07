@@ -62,11 +62,15 @@ label {
     font-size: 0px; }
   .btn--copyright:hover {
     background: #9204ff; }
-  .btn--submit {
+  .btn--submit, .btn--clear-bg {
     color: #ffffff;
     font-family: "PTSansNarrow", sans-serif;
     border: none;
     background: #826550; }
+  .btn--clear-bg {
+    color: #000000;
+    border: 1px solid #e5ddd5;
+    background: none; }
 
 .slider .slider__toggles {
   display: flex;
@@ -1251,21 +1255,125 @@ label {
     @media (min-width: 768px) {
       .enroll .btn--to-home {
         width: 160px; } }
-  .enroll .btn--submit {
+  .enroll .btn--submit, .enroll .btn--clear-bg {
     margin-top: 46px; }
     @media (min-width: 768px) {
-      .enroll .btn--submit {
+      .enroll .btn--submit, .enroll .btn--clear-bg {
         margin-top: 53px;
         padding: 21px 0;
         font-size: 24px; } }
     @media (min-width: 1200px) {
-      .enroll .btn--submit {
+      .enroll .btn--submit, .enroll .btn--clear-bg {
         margin-top: 75px; } }
   .enroll .fieldset-flex-inner-wrapper {
     display: inherit;
     flex-flow: inherit;
     justify-content: inherit;
     align-items: inherit; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6); }
+  .modal .modal__content {
+    position: relative;
+    max-width: 460px;
+    margin: 135px auto; }
+    .modal .modal__content .modal__close {
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 50px;
+      top: 0px;
+      right: -50px;
+      background: blue; }
+      @media (max-width: 767px) {
+        .modal .modal__content .modal__close {
+          display: none; } }
+  .modal--show {
+    display: block; }
+
+.login {
+  padding: 31px 20px;
+  font-size: 18px;
+  color: #000000;
+  background: #f8f5f2; }
+  @media (min-width: 768px) {
+    .login {
+      padding: 40px 70px; } }
+  .login .login__form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .login .login__form .login__name,
+    .login .login__form .login__pass {
+      padding: 14px 17px;
+      font-size: 18px;
+      font-family: "PTSansNarrow", sans-serif;
+      border: 1px solid #e5ddd5;
+      /*
+  @media (min-width: 768px) {
+    padding: 20px 22px;
+
+    font-size: 24px;
+  }
+  */
+      width: 100%;
+      margin-top: 10px; }
+    .login .login__form .login__pass {
+      margin-bottom: 22px; }
+    .login .login__form .btn {
+      margin-top: 27px;
+      width: 46%; }
+    @media (min-width: 768px) {
+      .login .login__form .btn--clear-bg {
+        display: none; } }
+    @media (min-width: 768px) {
+      .login .login__form .btn--submit, .login .login__form .btn--clear-bg {
+        width: 100%; } }
+  .login h1 {
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; }
+  .login a {
+    display: block;
+    padding: 7px 0px; }
+  .login input[type="checkbox"] {
+    display: none; }
+    .login input[type="checkbox"]:checked + label::after {
+      position: absolute;
+      content: "X";
+      top: 0;
+      left: 10px;
+      font-size: 2rem;
+      color: #000000; }
+  .login .login__remember-check {
+    position: relative;
+    display: block;
+    padding: 8px 16px 8px 48px;
+    display: inline-block; }
+    .login .login__remember-check::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 32px;
+      height: 32px;
+      background: #ffffff;
+      border: 2px solid #e5ddd5; }
+  .login .page-main__text {
+    margin-bottom: 13px;
+    text-align: center; }
 
 .slider-carousel .slider-carousel__left,
 .slider-carousel .slider-carousel__right {

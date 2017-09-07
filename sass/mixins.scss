@@ -59,3 +59,55 @@
   justify-content: inherit;
   align-items: inherit;
 }
+
+@mixin input-text-style {
+  padding: 14px 17px;
+
+  font-size: 18px;
+  font-family: "PTSansNarrow", sans-serif;
+
+  border: 1px solid $color-border-cream;
+
+  /*
+  @media #{$tablet-width} {
+    padding: 20px 22px;
+
+    font-size: 24px;
+  }
+  */
+}
+
+@mixin label-checkbox-custom($padding-left:40px) {
+  position: relative;
+  display: block;
+  padding: 8px 16px 8px $padding-left;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+
+    background: #ffffff;
+
+    border: 2px solid $color-border-cream;
+  }
+}
+@mixin input-custom {
+  display: none;
+
+  &:checked + label::after {
+    position: absolute;
+    content: "X";
+
+    top: 0;
+    left: 10px;
+
+    font-size: 2rem;
+    color: #000000;
+  }
+}

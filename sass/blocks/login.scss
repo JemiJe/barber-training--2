@@ -1,0 +1,73 @@
+.login {
+  padding: 31px 20px;
+
+  font-size: 18px;
+  color: #000000;
+
+  background: $color-section-background-light;
+
+  @media #{$tablet-width} {
+    padding: 40px 70px;
+  }
+
+  .login__form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .login__name,
+    .login__pass {
+      @include input-text-style;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .login__pass {
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      margin-top: 27px;
+      width: 46%;
+    }
+    .btn--clear-bg {
+
+      @media #{$tablet-width} {
+        display: none;
+      }
+    }
+    .btn--submit {
+
+      @media #{$tablet-width} {
+        width: 100%;
+      }
+    }
+  }
+
+  h1 {
+    margin: 0 auto;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  a {
+    display: block;
+    padding: 7px 0px;
+  }
+
+  input[type="checkbox"] {
+    @include input-custom;
+  }
+  .login__remember-check {
+    @include label-checkbox-custom(48px);
+    
+    display: inline-block;
+  }
+
+  .page-main__text {
+    margin-bottom: 13px;
+
+    text-align: center;
+  }
+}

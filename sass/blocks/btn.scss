@@ -57,4 +57,13 @@
     border: none;
     background: $menu-mobile-color;
   }
+
+  &--clear-bg {
+    @extend .btn--submit;
+
+    color: #000000;
+
+    border: 1px solid $color-border-cream;
+    background: none;
+  }
 }

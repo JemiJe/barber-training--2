@@ -198,6 +198,25 @@
 				</section>
 			</div>
 		</footer>
+		<!-- modal popups -->
+		<div class="modal">
+			<div class="modal__content">
+				<section class="login">
+					<h1>Личный кабинет</h1>
+					<p class="page-main__text">Введите свой логин и пароль, чтобы войти</p>
+					<form class="login__form" action="#" method="post">
+						<input type="text" class="login__name" name="login" placeholder="Логин" required>
+						<input type="password" class="login__pass" name="password" placeholder="Пароль" required>
+						<input type="checkbox" name="remember-me" value="true" id="remember-me">
+						<label for="remember-me" class="login__remember-check">Запомните меня</label>
+						<a href="#">Я забыл пароль!</a>
+						<button type="submit" class="btn  btn--submit">Войти</button>
+						<button type="button" class="btn  btn--clear-bg">Закрыть</button>
+					</form>
+				</section>
+				<div class="modal__close"></div>
+			</div>
+		</div>
 
 		<script src="js/script.js"></script>
 
