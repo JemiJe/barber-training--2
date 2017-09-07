@@ -1,0 +1,125 @@
+. {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.-beard-1 {
+    width: 52px;
+    height: 49px;
+    background-position: -16px -16px;
+}
+
+.-beard-2 {
+    width: 58px;
+    height: 68px;
+    background-position: -16px -97px;
+}
+
+.-beard-3 {
+    width: 64px;
+    height: 78px;
+    background-position: -16px -197px;
+}
+
+.-beard-4 {
+    width: 58px;
+    height: 98px;
+    background-position: -16px -307px;
+}
+
+.-beard-5 {
+    width: 46px;
+    height: 105px;
+    background-position: -16px -437px;
+}
+
+.-checked-b {
+    width: 24px;
+    height: 24px;
+    background-position: -16px -574px;
+}
+
+.-cross-w {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -630px;
+}
+
+.-facebook-g-l {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -694px;
+}
+
+.-facebook-w {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -758px;
+}
+
+.-instagram-g-l {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -822px;
+}
+
+.-instagram-w {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -886px;
+}
+
+.-lock-b {
+    width: 24px;
+    height: 24px;
+    background-position: -16px -950px;
+}
+
+.-menu-w {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -1006px;
+}
+
+.-person-b {
+    width: 24px;
+    height: 24px;
+    background-position: -16px -1070px;
+}
+
+.-sign-in-br {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -1126px;
+}
+
+.-sign-in-g {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -1190px;
+}
+
+.-sign-in-g-l {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -1254px;
+}
+
+.-sign-in-w {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -1318px;
+}
+
+.-vk-g-l {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -1382px;
+}
+
+.-vk-w {
+    width: 32px;
+    height: 32px;
+    background-position: -16px -1446px;
+}

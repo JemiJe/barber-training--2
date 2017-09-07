@@ -111,3 +111,9 @@
     color: #000000;
   }
 }
+
+@mixin pseudo-elem($position:"static") {
+  position: $position;
+  display: block;
+  content: "";
+}

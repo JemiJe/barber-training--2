@@ -2,6 +2,7 @@
 @import url(normalize.css);
 /* MEDIA */
 /* COLORS */
+/* PATH */
 @font-face {
   font-family: 'PTSansNarrow';
   src: url("../fonts/ptsansnarrow.woff2") format("woff2"), url("../fonts/ptsansnarrow.woff") format("woff");
@@ -42,6 +43,11 @@ label {
   border: 1px solid #e5ddd5;
   cursor: pointer;
   user-select: none; }
+  .btn:hover {
+    border-color: #d5c9bd; }
+  .btn:active {
+    color: #958c84;
+    background: #d5c9bd; }
   .btn--border-ash {
     border: 1px solid #3e3e3e; }
   @media (min-width: 768px) {
@@ -60,8 +66,41 @@ label {
         content: "Тел: "; } }
   .btn--social {
     font-size: 0px; }
+  .btn--social:active {
+    background: #252525; }
+  .btn--vk, .btn--fs, .btn--ins {
+    display: flex; }
+    .btn--vk:active:before, .btn--fs:active:before, .btn--ins:active:before {
+      opacity: 0.5; }
+  .btn--vk:before, .btn--fs:before, .btn--ins:before {
+    margin: auto auto;
+    width: 32px;
+    height: 32px; }
+  .btn--vk:before {
+    position: static;
+    display: block;
+    content: "";
+    background: url("../img/spritesheet.png") no-repeat center top;
+    background-position: -16px -1446px; }
+  .btn--fs:before {
+    position: static;
+    display: block;
+    content: "";
+    background: url("../img/spritesheet.png") no-repeat center top;
+    background-position: -16px -758px; }
+  .btn--ins:before {
+    position: static;
+    display: block;
+    content: "";
+    background: url("../img/spritesheet.png") no-repeat center top;
+    background-position: -16px -886px; }
+  .btn--social:hover, .btn--copyright:hover {
+    border: 1px solid #545454 !important; }
   .btn--copyright:hover {
     background: #9204ff; }
+  .btn--copyright:active {
+    color: #EDEDED;
+    background: #7A00DA; }
   .btn--submit, .btn--clear-bg {
     color: #ffffff;
     font-family: "PTSansNarrow", sans-serif;
@@ -170,24 +209,50 @@ label {
 
 .page-header__btnMenu {
   width: 70px;
-  height: 50px; }
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #6a4d38 url("../img/spritesheet.png") no-repeat center top; }
 
 .page-header__item {
   flex: 1 1 100%;
   min-height: 51px;
   background: #826550; }
+  @media (max-width: 767px) {
+    .page-header__item {
+      border-top: 1px solid #886e5b;
+      border-bottom: 1px solid #71543f;
+      /*
+    a {
+      box-shadow: inset 20px 0px 15px -20px rgba(0, 0, 0, 0.5);
+    }
+    */ }
+      .page-header__item:active {
+        background: #6a4d38; } }
+  @media (min-width: 768px) {
+    .page-header__item a:hover {
+      color: #000000;
+      background-color: #ffffff; }
+    .page-header__item a:active {
+      color: #958c84; } }
 
 .page-header__item--user-block a {
-  padding-left: 50px;
+  padding-left: 60px;
   text-transform: none;
-  font-weight: normal; }
+  font-weight: normal;
+  background: url("../img/spritesheet.png") no-repeat center top;
+  background-position: 0px -1245px; }
+  @media (min-width: 768px) {
+    .page-header__item--user-block a {
+      background-position: -16px -1169px; } }
 
 .page-header__menu--closed a {
   padding-right: 60px;
   text-align: right; }
 
 .page-header__menu--closed .page-header__btnMenu {
-  display: block; }
+  display: block;
+  background-position: 4px -998px; }
   @media (min-width: 768px) {
     .page-header__menu--closed .page-header__btnMenu {
       display: none; } }
@@ -203,6 +268,17 @@ label {
 .page-header__menu--closed .page-header__item--current {
   display: block;
   min-height: 51px; }
+  @media (min-width: 768px) {
+    .page-header__menu--closed .page-header__item--current {
+      position: relative; }
+      .page-header__menu--closed .page-header__item--current:before {
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background: #826550; } }
 
 @media (max-width: 767px) {
   .page-header__menu--closed .page-header__item--current a {
@@ -216,7 +292,8 @@ label {
   top: 85px; }
   .page-header__menu--opened .page-header__btnMenu {
     position: absolute;
-    order: -1; }
+    order: -1;
+    background-position: 3px -621px; }
   .page-header__menu--opened .page-header__item {
     margin-left: 70px; }
 

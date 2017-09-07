@@ -15,6 +15,15 @@
   cursor: pointer;
   user-select: none;
 
+  &:hover {
+    border-color: $color-border-cream-active;
+  }
+  &:active {
+    color: $btn-active-text;
+
+    background: $btn-active-bg;
+  }
+
   &--border-ash {
     border: 1px solid $color-border-ash;
   }
@@ -43,10 +52,56 @@
   &--social {
     font-size: 0px;
   }
+  &--social:active {
+    background: $btn-footer-active-bg;
+  }
+  &--vk,
+  &--fs,
+  &--ins {
+    display: flex;
+
+    &:active:before {
+      opacity: 0.5;
+    }
+  }
+  &--vk:before,
+  &--fs:before,
+  &--ins:before {
+    margin: auto auto;
+    width: 32px;
+    height: 32px;
+  }
+  &--vk:before {
+    @include pseudo-elem(static);
+
+    background: url($path-sprite) no-repeat center top;
+    background-position: -16px -1446px;
+  }
+  &--fs:before {
+    @include pseudo-elem(static);
+
+    background: url($path-sprite) no-repeat center top;
+    background-position: -16px -758px;
+  }
+  &--ins:before {
+    @include pseudo-elem(static);
+
+    background: url($path-sprite) no-repeat center top;
+    background-position: -16px -886px;
+  }
+
+  &--social:hover,
+  &--copyright:hover {
+    border: 1px solid $color-border-ash-lt !important;
+  }
 
   &--copyright {
     &:hover {
       background: $btn-copy-hover;
+    }
+    &:active {
+      color: #EDEDED;
+      background: $btn-copy-active;
     }
   }
 
