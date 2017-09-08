@@ -57,6 +57,18 @@
       order: 3;
       width: 100%;
     }
+
+    .slider-carousel__left,
+    .slider-carousel__right {
+      &:hover {
+        border-color: $color-border-cream-active;
+      }
+      &:active {
+        color: $btn-active-text;
+    
+        background: $btn-active-bg;
+      }
+    }
   }
 
   .reviews__item {
@@ -82,9 +94,12 @@
 
     .reviews__desc {
       flex: 1 1 75%;
+      min-height: 150px;
 
       @media #{$tablet-width} {
         flex: 0 1 68%;
+        min-height: 100px;
+        padding-right: 30px;
       }
       @media #{$desktop-width} {
         flex: 0 1 500px;
@@ -119,10 +134,11 @@
         }
       }
     }
-
-    &:nth-of-type(n+4) {
+    /*
+    &:nth-of-type(n+5) {
       display: none !important;
     }
+    */
   }
 
   .btn {

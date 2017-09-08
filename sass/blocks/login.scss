@@ -70,4 +70,18 @@
 
     text-align: center;
   }
+
+  &--nojs {
+
+    .login__form {
+
+      .btn--submit {
+        width: 100%;
+      } 
+
+      .btn--clear-bg {
+        display: none;
+      }
+    }
+  }
 }

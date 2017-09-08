@@ -116,6 +116,7 @@ label {
   flex-flow: row nowrap;
   justify-content: center;
   width: 100%;
+  padding-top: 30px;
   text-align: center; }
 
 .slider .slider__toggle {
@@ -530,7 +531,7 @@ label {
   .features .features__item {
     padding: 40px 14%;
     padding-bottom: 0px;
-    min-height: 340px;
+    min-height: 350px;
     text-align: center; }
     @media (min-width: 768px) {
       .features .features__item {
@@ -672,11 +673,23 @@ label {
     .reviews .reviews__block {
       order: 3;
       width: 100%; } }
+  .reviews .reviews__block .slider-carousel__left:hover,
+  .reviews .reviews__block .slider-carousel__right:hover {
+    border-color: #d5c9bd; }
+  .reviews .reviews__block .slider-carousel__left:active,
+  .reviews .reviews__block .slider-carousel__right:active {
+    color: #958c84;
+    background: #d5c9bd; }
   .reviews .reviews__item {
     flex: 1 1 100%;
     display: flex;
     flex-flow: row wrap;
-    padding: 17px 0px; }
+    padding: 17px 0px;
+    /*
+    &:nth-of-type(n+5) {
+      display: none !important;
+    }
+    */ }
     @media (min-width: 768px) {
       .reviews .reviews__item {
         flex: 0 1 85%;
@@ -691,10 +704,13 @@ label {
         justify-content: space-between;
         padding: 0; } }
     .reviews .reviews__item .reviews__desc {
-      flex: 1 1 75%; }
+      flex: 1 1 75%;
+      min-height: 150px; }
       @media (min-width: 768px) {
         .reviews .reviews__item .reviews__desc {
-          flex: 0 1 68%; } }
+          flex: 0 1 68%;
+          min-height: 100px;
+          padding-right: 30px; } }
       @media (min-width: 1200px) {
         .reviews .reviews__item .reviews__desc {
           flex: 0 1 500px; } }
@@ -723,8 +739,6 @@ label {
           .reviews .reviews__item .reviews__photo img {
             width: 249px;
             height: 160px; } }
-    .reviews .reviews__item:nth-of-type(n+4) {
-      display: none !important; }
   .reviews .btn {
     margin-top: 4px; }
     @media (max-width: 767px) {
@@ -1502,6 +1516,10 @@ label {
   .login .page-main__text {
     margin-bottom: 13px;
     text-align: center; }
+  .login--nojs .login__form .btn--submit, .login--nojs .login__form .btn--clear-bg {
+    width: 100%; }
+  .login--nojs .login__form .btn--clear-bg {
+    display: none; }
 
 .slider-carousel .slider-carousel__left,
 .slider-carousel .slider-carousel__right {
