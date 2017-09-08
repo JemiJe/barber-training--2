@@ -1,7 +1,7 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 20;
   
   left: 0;
   top: 0;
@@ -26,10 +26,24 @@
       top: 0px;
       right: -50px;
 
-      background: blue;
-
       @media #{$mobile-width-max} {
         display: none;
+      }
+
+      &::before {
+        @include pseudo-elem(absolute);
+
+        top: 9px;
+        left: 9px;
+
+        width: 32px;
+        height: 32px;
+        
+        background: url($path-sprite) no-repeat;
+        background-position: -16px -630px;
+      }
+      &:hover::before {
+        opacity: 0.5;
       }
     }
   }

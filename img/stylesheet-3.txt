@@ -1,0 +1,35 @@
+. {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.-beard-1 {
+    width: 52px;
+    height: 49px;
+    background-position: -32px -32px;
+}
+
+.-beard-2 {
+    width: 58px;
+    height: 68px;
+    background-position: -148px -32px;
+}
+
+.-beard-3 {
+    width: 64px;
+    height: 78px;
+    background-position: -270px -32px;
+}
+
+.-beard-4 {
+    width: 58px;
+    height: 98px;
+    background-position: -398px -32px;
+}
+
+.-beard-5 {
+    width: 46px;
+    height: 105px;
+    background-position: -520px -32px;
+}

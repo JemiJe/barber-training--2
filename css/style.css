@@ -244,6 +244,9 @@ label {
   background-position: 0px -1245px; }
   @media (min-width: 768px) {
     .page-header__item--user-block a {
+      background-position: 5% -1169px; } }
+  @media (min-width: 1200px) {
+    .page-header__item--user-block a {
       background-position: -16px -1169px; } }
 
 .page-header__menu--closed a {
@@ -976,7 +979,14 @@ label {
         flex: 0 0 auto;
         padding: 2px 19px;
         padding-left: 36px;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        background: url("../img/spritesheet-2.png") no-repeat; }
+        .works .works__item .works__tags .works__tag--haircut {
+          background-position: -12px -108px; }
+        .works .works__item .works__tags .works__tag--shaving, .works .works__item .works__tags .works__tag--beard {
+          background-position: -12px -12px; }
+        .works .works__item .works__tags .works__tag--mustache {
+          background-position: -12px -60px; }
   .works .page-main__text {
     font-size: 18px; }
   @media (max-width: 767px) {
@@ -1229,16 +1239,32 @@ label {
       position: relative;
       display: block;
       width: 93px;
-      min-height: 200px;
+      min-height: 210px;
       padding-top: 63px;
       font-size: 18px;
       text-align: center;
       text-transform: lowercase;
+      background: url("../img/spritesheet-beards.png") no-repeat;
+      background-position-y: 70px;
       user-select: none;
       cursor: pointer; }
       @media (min-width: 768px) {
         .enroll .enroll__form .enroll__beard-type .enroll__beard-type-radio {
           font-size: 24px; } }
+      .enroll .enroll__form .enroll__beard-type .enroll__beard-type-radio--admiral {
+        background-position-x: -12px; }
+      .enroll .enroll__form .enroll__beard-type .enroll__beard-type-radio--lumberjack {
+        background-position-x: -130px; }
+      .enroll .enroll__form .enroll__beard-type .enroll__beard-type-radio--polar {
+        background-position-x: -254px; }
+      .enroll .enroll__form .enroll__beard-type .enroll__beard-type-radio--boyar {
+        background-position-x: -380px; }
+      .enroll .enroll__form .enroll__beard-type .enroll__beard-type-radio--wise-old-man {
+        background-position-x: -496px; }
+      .enroll .enroll__form .enroll__beard-type .enroll__beard-type-radio:hover::before {
+        border-color: #d5c9bd; }
+      .enroll .enroll__form .enroll__beard-type .enroll__beard-type-radio:active::before {
+        background: #d5c9bd; }
     .enroll .enroll__form .enroll__beard-type .enroll__beard-type-radio::before {
       position: absolute;
       display: block;
@@ -1311,6 +1337,10 @@ label {
       @media (min-width: 768px) {
         .enroll .enroll__form .enroll__extra-service .enroll__extra-serv-check {
           font-size: 24px; } }
+      .enroll .enroll__form .enroll__extra-service .enroll__extra-serv-check:active::before {
+        background: #d5c9bd; }
+      .enroll .enroll__form .enroll__extra-service .enroll__extra-serv-check:hover::before {
+        border-color: #d5c9bd; }
     .enroll .enroll__form .enroll__extra-service .enroll__extra-serv-check::before {
       position: absolute;
       display: block;
@@ -1321,9 +1351,16 @@ label {
       height: 32px;
       background: #ffffff;
       border: 2px solid #e5ddd5; }
-    .enroll .enroll__form .enroll__extra-service input:checked + .enroll__extra-serv-check::before {
-      /* change to AFTER + icon*/
-      background: #887DF6; }
+    .enroll .enroll__form .enroll__extra-service input:checked + .enroll__extra-serv-check::after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 6px;
+      left: 7px;
+      width: 24px;
+      height: 24px;
+      background: url("../img/spritesheet.png") no-repeat;
+      background-position: -16px -574px; }
   .enroll .btn--to-home {
     height: 50px; }
     @media (max-width: 767px) {
@@ -1351,7 +1388,7 @@ label {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 20;
   left: 0;
   top: 0;
   width: 100%;
@@ -1369,11 +1406,22 @@ label {
       width: 50px;
       height: 50px;
       top: 0px;
-      right: -50px;
-      background: blue; }
+      right: -50px; }
       @media (max-width: 767px) {
         .modal .modal__content .modal__close {
           display: none; } }
+      .modal .modal__content .modal__close::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 9px;
+        left: 9px;
+        width: 32px;
+        height: 32px;
+        background: url("../img/spritesheet.png") no-repeat;
+        background-position: -16px -630px; }
+      .modal .modal__content .modal__close:hover::before {
+        opacity: 0.5; }
   .modal--show {
     display: block; }
 
@@ -1428,11 +1476,14 @@ label {
     display: none; }
     .login input[type="checkbox"]:checked + label::after {
       position: absolute;
-      content: "X";
-      top: 0;
-      left: 10px;
-      font-size: 2rem;
-      color: #000000; }
+      display: block;
+      content: "";
+      top: 6px;
+      left: 7px;
+      width: 24px;
+      height: 24px;
+      background: url("../img/spritesheet.png") no-repeat;
+      background-position: -16px -574px; }
   .login .login__remember-check {
     position: relative;
     display: block;

@@ -190,6 +190,19 @@
         padding: 2px 19px;
         padding-left: 36px;
         margin-bottom: 20px;
+
+        background: url($path-sprite-tags) no-repeat;
+
+        &--haircut {
+          background-position: -12px -108px;
+        }
+        &--shaving,
+        &--beard {
+          background-position: -12px -12px;
+        }
+        &--mustache {
+          background-position: -12px -60px;
+        }
       }
     }
   }

@@ -102,13 +102,17 @@
 
   &:checked + label::after {
     position: absolute;
-    content: "X";
+    display: block;
+    content: "";
 
-    top: 0;
-    left: 10px;
+    top: 6px;
+    left: 7px;
 
-    font-size: 2rem;
-    color: #000000;
+    width: 24px;
+    height: 24px;
+    
+    background: url($path-sprite) no-repeat;
+    background-position: -16px -574px;
   }
 }
 

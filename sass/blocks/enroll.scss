@@ -192,7 +192,7 @@
         position: relative;
         display: block;
         width: 93px;
-        min-height: 200px;
+        min-height: 210px;
         
         padding-top: 63px;
 
@@ -200,11 +200,37 @@
         text-align: center;
         text-transform: lowercase;
 
+        background: url($path-sprite-beards) no-repeat;
+        background-position-y: 70px;
+
         user-select: none;
         cursor: pointer;
 
         @media #{$tablet-width} {
           font-size: 24px;
+        }
+
+        &--admiral {
+          background-position-x: -12px;
+        }
+        &--lumberjack {
+          background-position-x: -130px;
+        }
+        &--polar {
+          background-position-x: -254px;
+        }
+        &--boyar {
+          background-position-x: -380px;
+        }
+        &--wise-old-man {
+          background-position-x: -496px;
+        }
+
+        &:hover::before {
+          border-color: $color-border-cream-active;
+        }
+        &:active::before {
+          background: $color-border-cream-active;
         }
       }
 
@@ -238,7 +264,6 @@
 
         border: 2px solid $color-border-cream;
         border-radius: 10px;
-        
       }
 
       .enroll__field-header {
@@ -307,6 +332,13 @@
         @media #{$tablet-width} {
           font-size: 24px;
         }
+
+        &:active::before {
+          background: $color-border-cream-active;
+        }
+        &:hover::before {
+          border-color: $color-border-cream-active;
+        }
       }
 
       .enroll__extra-serv-check::before {
@@ -324,8 +356,17 @@
         border: 2px solid $color-border-cream;
       }
       
-      input:checked + .enroll__extra-serv-check::before { /* change to AFTER + icon*/
-        background: #887DF6;
+      input:checked + .enroll__extra-serv-check::after {
+        @include pseudo-elem(absolute);
+
+        top: 6px;
+        left: 7px;
+
+        width: 24px;
+        height: 24px;
+        
+        background: url($path-sprite) no-repeat;
+        background-position: -16px -574px;
       }
     }
   }

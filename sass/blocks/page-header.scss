@@ -113,6 +113,9 @@
     background-position: 0px -1245px;
 
     @media #{$tablet-width} {
+      background-position: 5% -1169px;
+    }
+    @media #{$desktop-width} {
       background-position: -16px -1169px;
     }
   }
