@@ -9,7 +9,7 @@ if(menu.classList.contains("page-header__menu--opened")) {
   menu.classList.add("page-header__menu--closed");
 }
 
-btnMenu.addEventListener("click", function() {
+btnMenu.addEventListener("click", function(e) {
   if(menu.classList.contains("page-header__menu--closed")) {
     menu.classList.remove("page-header__menu--closed");
     menu.classList.add("page-header__menu--opened");
@@ -21,8 +21,8 @@ btnMenu.addEventListener("click", function() {
 
 /* SLIDER */
 
-function jsHere(slider, noJsClass) {
-  slider.forEach(function(i) {
+function jsHere(elems, noJsClass) {
+  elems.forEach(function(i) {
     i.classList.remove(noJsClass);
   });
 }
@@ -39,9 +39,14 @@ function sliderItemsClear(arrItems, arrToggles, itemClass, toggleClass, currInde
 }
 function sliderInit(parentElemClassName) {
   var slider = document.querySelectorAll(".slider");
+  
+  if(!slider) return false;
+  
   jsHere(slider, 'slider--nojs');
 
   var parentElem = document.querySelector("." + parentElemClassName);
+  if(!parentElem) return false;
+
   var slider_item = Array.from(parentElem.querySelectorAll(".slider__item"));
   var slider_toggleS = parentElem.querySelector(".slider__toggles");
   var slider_toggle = Array.from(parentElem.querySelectorAll(".slider__toggle"));
@@ -62,6 +67,8 @@ function sliderInit(parentElemClassName) {
 function sliderCarouselInit(parentElemClassName) {
 
   var parentElem = document.querySelector("." + parentElemClassName);
+  if(!parentElem) return false;
+
   var slider_carousel = parentElem.querySelector(".slider-carousel");
   var toggleLeft = parentElem.querySelector(".slider-carousel__left");
   var toggleRight = parentElem.querySelector(".slider-carousel__right");
@@ -117,7 +124,9 @@ var modal = document.querySelector(".modal");
 var btn_close_modal = modal.querySelector(".modal__close");
 var btn_close_login = modal.querySelector(".btn--clear-bg");
 
-btn_menu.addEventListener("click", function() {
+btn_menu.addEventListener("click", function(e) {
+
+  e.preventDefault();
 
   menu.classList.remove("page-header__menu--opened");
   menu.classList.add("page-header__menu--closed");
