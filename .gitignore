@@ -2,6 +2,8 @@ node_modules
 
 001_layoutSrc
 
+build/
+
 logs
 *.log
 npm-debug.log*

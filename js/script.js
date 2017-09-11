@@ -141,8 +141,8 @@ modal.addEventListener("click", function(e) {
   }
 });
 
-window.addEventListener("click", function() {
-  if (event.target == modal) {
+window.addEventListener("click", function(e) {
+  if (e.target == modal) {
     modal.classList.remove("modal--show");
   }
 });
